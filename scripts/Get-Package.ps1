@@ -249,7 +249,7 @@ git commit -m "Package download $packageName
 [skip ci]"
 
 try {
-    git push
+    git push --set-upstream origin $packageName
 } catch {
     write-output "nothing to push"
 }
