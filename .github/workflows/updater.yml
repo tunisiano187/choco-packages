@@ -65,7 +65,7 @@ jobs:
           Set-Service wuauserv -StartupType Manual
           choco install --no-progress wormies-au-helpers vt-cli -y
           git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
-          . "$Env:TEMP/chocolatey-au/scripts/Install-AU.ps1" $Env:au_version
+          . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
 
       - name: System information
         run: |
