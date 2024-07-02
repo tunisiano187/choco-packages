@@ -231,6 +231,8 @@ if(Test-Path "$workfolder\README.md") {
 }
 
 
+$ErrorActionPreference = 'SilentlyContinue';
+
 "List files to add to git"
 $toadd = (get-childitem -path "$folder\$packageName").FullName
 foreach ($file in $toadd) {
