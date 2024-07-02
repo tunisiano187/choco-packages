@@ -43,7 +43,7 @@ if($null -eq $packageName) {
 }
 
 git pull
-git branch $packageName
+git checkout -b $packageName
 $folder=Join-Path $PSScriptRoot $folder
 if ($folder -match "scripts") {
     $folder = $folder -replace "\\scripts", ""
