@@ -196,7 +196,7 @@ if (!($WorkContentNuspec -match "<files>")) {
 if(!($WorkContentNuspec.package.metadata.packageSourceUrl)) {
     Write-Output "add packageSourceUrl"
     (Get-Content $NuspecPath) -replace "</owners>", '</owners>
-<packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath
+    <packageSourceUrl></packageSourceUrl>' | Set-Content $NuspecPath
 }
 
 # "Set version to 0.0"
