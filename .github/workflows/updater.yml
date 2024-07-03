@@ -2,7 +2,7 @@
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   workflow_dispatch: # Enable manual trigger
     inputs:
       packages:
@@ -69,7 +69,7 @@ jobs:
           git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
           import-module "$(Get-Location)\scripts\au_extensions.psm1" -global
-          choco apikey add -k $env:api_key -s https://push.chocolatey.org/
+          choco apikey add -k="$env:api_key" -s="https://push.chocolatey.org/"
 
       - name: System information
         run: |
