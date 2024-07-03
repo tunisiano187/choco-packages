@@ -87,7 +87,8 @@ jobs:
           . ./scripts/EventLogs.ps1
           Clear-EventLogs
           rm "$env:ChocolateyInstall\logs\*.log"
-          get-childitem -path .\automatic
+          Get-Location
+          get-childitem -path "$(Get-Location)\automatic"
           ./update_all.ps1 -ForcedPackages $env:FORCED_PACKAGES
           Get-EventLogs * | ? Source -eq 'Schannel' | fl * | out-file eventlogs.txt
 
