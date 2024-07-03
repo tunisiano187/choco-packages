@@ -36,8 +36,8 @@ $Options = [ordered]@{
         Path = "$PSScriptRoot\Update-AUPacakges.md"         #Path where to save the report
         Params= @{                                          #Report parameters:
             Github_UserRepo = $Env:github_user_repo          #  Markdown: shows user info in upper right corner
-            NoAppVeyor  = $false                            #  Markdown: do not show AppVeyor build shield
-            UserMessage = "[Ignored](#ignored) | [History](#update-history) | [Force Test](https://gist.github.com/$Env:gist_id_test) | [Releases](https://github.com/$Env:github_user_repo/tags)"       #  Markdown, Text: Custom user message to show
+            NoAppVeyor  = $True                            #  Markdown: do not show AppVeyor build shield
+            UserMessage = "[Ignored](#ignored) | [History](#update-history) | [Force Test](https://gist.github.com/$Env:gist_id) | [Releases](https://github.com/$Env:github_user_repo/tags)"       #  Markdown, Text: Custom user message to show
         }
     }
 
@@ -88,10 +88,10 @@ $global:au_Root = "$PSScriptRoot/../automatic"                           #Path t
 $info = updateall -Name $Name -Options $Options
 
 #Uncomment to fail the build on AppVeyor on any package error
-if (($null -ne $Env:APPVEYOR_PULL_REQUEST_NUMBER) -and ($Env:APPVEYOR_PULL_REQUEST_NUMBER -ne '')) {
-    Write-Information "On Appveyor"
-    if ($info.error_count.total) { throw "$($info.error_count.total) errors during update" }
-}
+#if (($null -ne $Env:APPVEYOR_PULL_REQUEST_NUMBER) -and ($Env:APPVEYOR_PULL_REQUEST_NUMBER -ne '')) {
+#    Write-Information "On Appveyor"
+#    if ($info.error_count.total) { throw "$($info.error_count.total) errors during update" }
+#}
 # if($info.error_count.total) {
 #    foreach ($issue in $info.error) {
 #        # check the content of the $issue
