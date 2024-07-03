@@ -30,7 +30,7 @@ function Block-Package {
 
     Install-Module -Name PowerShellForGitHub -Force
     Import-Module PowerShellForGitHub
-    $secureString = ("$env:AU_GITHUB_API_KEY" | ConvertTo-SecureString -AsPlainText -Force)
+    $secureString = ("$env:GITHUB_TOKEN" | ConvertTo-SecureString -AsPlainText -Force)
     $cred = New-Object System.Management.Automation.PSCredential "username is ignored", $secureString
     Set-GitHubAuthentication -Credential $cred
     $secureString = $null # clear this out now that it's no longer needed
