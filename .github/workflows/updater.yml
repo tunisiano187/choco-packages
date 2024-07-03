@@ -2,7 +2,7 @@
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch: # Enable manual trigger
     inputs:
       packages:
