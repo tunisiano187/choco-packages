@@ -41,11 +41,11 @@ $Options = [ordered]@{
         }
     }
 
-    #Gist = @{
-    #    Id          = ""                                    #Your gist id or leave empty for anonymous
-    #    ApiKey      = $Env:github_api_key                   #Your github api key
-    #    Path        = "$PSScriptRoot\Update-AUPacakges.md", "$PSScriptRoot\Update-History.md"  #List of files to add to gist
-    #}
+    Gist = @{
+        Id          = "94c2ec0efd8f0d199af1ae9914bec446"    #Your gist id or leave empty for anonymous
+        ApiKey      = $Env:github_api_key                   #Your github api key
+        Path        = "$PSScriptRoot\Update-AUPacakges.md", "$PSScriptRoot\Update-History.md"  #List of files to add to gist
+    }
 
     Git = @{
         User = 'tunisiano187'
