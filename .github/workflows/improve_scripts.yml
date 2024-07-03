@@ -25,6 +25,7 @@ jobs:
 
       - name: Checking nuspec errors
         run: |
+          $ErrorActionPreference = 'SilentlyContinue';
           scripts/Find-NuspecError.ps1
           try {
             git commit -am "Nuspec errors"
@@ -34,6 +35,7 @@ jobs:
 
       - name: Checking packageSourceUrl
         run: |
+          $ErrorActionPreference = 'SilentlyContinue';
           scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Choco-packages" -UseStopwatch
           try {
             git commit -am "PackageSourceUrl"
@@ -44,6 +46,7 @@ jobs:
 
       - name: Checking variables in ps1
         run: |
+          $ErrorActionPreference = 'SilentlyContinue';
           scripts/Update-Variables.ps1
           try {
             git commit -am "ps1 vars"
@@ -53,6 +56,7 @@ jobs:
 
       - name: Checking IconUrl in nuspec
         run: |
+          $ErrorActionPreference = 'SilentlyContinue';
           scripts/Update-IconUrl.ps1 -Quiet -GithubRepository "tunisiano187/Choco-packages" -UseStopwatch
           try {
             git commit -am "Updating icons"
@@ -62,6 +66,7 @@ jobs:
       
       - name: Updating owners in nuspec
         run: |
+          $ErrorActionPreference = 'SilentlyContinue';
           import-module Wormies-AU-Helpers
           $nuspec=Get-ChildItem ./*.nuspec -Recurse;
           foreach ($file in $nuspec) { Update-Metadata -key owners -value "tunisiano" -NuspecFile $file.FullName }
@@ -73,6 +78,7 @@ jobs:
 
       - name: Updating Packages.md
         run: |
+          $ErrorActionPreference = 'SilentlyContinue';
           scripts/ListPackages.ps1
           try {
             git commit -am "List packages"
