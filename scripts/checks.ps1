@@ -19,4 +19,6 @@ git commit -am "Updating owner"
 Write-Host "Updating Packages.md"
 scripts/ListPackages.ps1
 git commit -am "List packages"
-    
+git pull
+git push origin master
+exit 0
