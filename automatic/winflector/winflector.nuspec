@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>winflector</id>
-    <version>4.0.0.0</version>
+    <version>4.0.1.0</version>
     <title>Winflector (Install)</title>
     <authors>OTC S.A.</authors>
     <owners>tunisiano</owners>
@@ -35,6 +35,9 @@ Remote desktop is a good solution when one wishes to remotely administrate the c
 This is a fully functional version of Winflector software for two concurrent workstations for free.
 
 [Winflector Client](https://chocolatey.org/packages/winflector-client)
+
+# False Positive
+[![](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a6b799178c1da8fbf40ccda0eb235a763e71b5a8/automatic/winflector/tools/False_Positive.PNG)](https://chocolatey.org/packages/winflector)
 
 #### [choco://winflector](choco://winflector)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
