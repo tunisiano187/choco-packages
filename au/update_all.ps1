@@ -47,10 +47,10 @@ $Options = [ordered]@{
     #    Path        = "$PSScriptRoot\Update-AUPacakges.md", "$PSScriptRoot\Update-History.md"  #List of files to add to gist
     #}
 
-    Git = @{
-        User = 'tunisiano187'
-        Password = $Env:github_api_key
-    }
+    #Git = @{
+    #    User = 'tunisiano187'
+    #    Password = $Env:github_api_key
+    #}
 
     #GitLab = @{
     #    User			= 'tunisiano187'					#Git username, leave empty if github api key is used
