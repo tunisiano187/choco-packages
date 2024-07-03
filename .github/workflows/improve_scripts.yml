@@ -26,31 +26,56 @@ jobs:
       - name: Checking nuspec errors
         run: |
           scripts/Find-NuspecError.ps1
-          git commit -am "Nuspec errors"
+          try {
+            git commit -am "Nuspec errors"
+          } catch {
+              write-output "Nuspec errors : nothing to commit"
+          }
 
       - name: Checking packageSourceUrl
         run: |
           scripts/Update-PackageSourceUrl.ps1 -GithubRepository "tunisiano187/Choco-packages" -UseStopwatch
-          git commit -am "PackageSourceUrl"
+          try {
+            git commit -am "PackageSourceUrl"
+          } catch {
+              write-output "PackageSourceUrl : nothing to commit"
+          }
+          
 
       - name: Checking variables in ps1
         run: |
           scripts/Update-Variables.ps1
-          git commit -am "ps1 vars"
+          try {
+            git commit -am "ps1 vars"
+          } catch {
+              write-output "ps1 vars : nothing to commit"
+          }
 
       - name: Checking IconUrl in nuspec
         run: |
           scripts/Update-IconUrl.ps1 -Quiet -GithubRepository "tunisiano187/Choco-packages" -UseStopwatch
-          git commit -am "Updating icons"
+          try {
+            git commit -am "Updating icons"
+          } catch {
+              write-output "Updating icons : nothing to commit"
+          }
       
       - name: Updating owners in nuspec
         run: |
           import-module Wormies-AU-Helpers
           $nuspec=Get-ChildItem ./*.nuspec -Recurse;
           foreach ($file in $nuspec) { Update-Metadata -key owners -value "tunisiano" -NuspecFile $file.FullName }
-          git commit -am "Updating owner"
+          try {
+            git commit -am "Updating owner"
+          } catch {
+              write-output "Updating owner : nothing to commit"
+          }
 
       - name: Updating Packages.md
         run: |
           scripts/ListPackages.ps1
-          git commit -am "List packages"
+          try {
+            git commit -am "List packages"
+          } catch {
+              write-output "List packages : nothing to commit"
+          }
