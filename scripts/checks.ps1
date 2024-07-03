@@ -1,4 +1,6 @@
-﻿Write-Host "Checking nuspec errors"
+﻿$ErrorActionPreference = "SilentlyContinue"
+
+Write-Host "Checking nuspec errors"
 scripts/Find-NuspecError.ps1
 git commit -am "Nuspec errors"
 Write-Host "updating packageSourceUrl"
