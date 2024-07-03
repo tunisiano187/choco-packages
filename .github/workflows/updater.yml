@@ -58,7 +58,7 @@ jobs:
 
       - name: Configure git client
         run: |
-          git config --global user.email "${{ secrets.MAIL_USER }}"
+          git config --global user.email "helpdesk.choc@gmail.com"
           git config --global user.name "Tunisiano"
           git config --global core.safecrlf false
 
