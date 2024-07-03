@@ -1,4 +1,5 @@
 # Automatic Packages currently maintained here
 | Downloads | Package Name and version | Repology |
 |-----------:|--------------|--------------|
+| [![7-taskbar-tweaker](http://img.shields.io/chocolatey/dt/7-taskbar-tweaker.svg)](https://chocolatey.org/packages/7-taskbar-tweaker) | [![7-taskbar-tweaker](https://img.shields.io/chocolatey/v/7-taskbar-tweaker?color=green&label=7-taskbar-tweaker)](https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/7-taskbar-tweaker)|[![Chocolatey package](https://repology.org/badge/latest-versions/7-taskbar-tweaker.svg)](https://repology.org/project/7-taskbar-tweaker/versions)|
 | [![winflector](http://img.shields.io/chocolatey/dt/winflector.svg)](https://chocolatey.org/packages/winflector) | [![winflector](https://img.shields.io/chocolatey/v/winflector?color=green&label=winflector)](https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/winflector)|[![Chocolatey package](https://repology.org/badge/latest-versions/winflector.svg)](https://repology.org/project/winflector/versions)|
