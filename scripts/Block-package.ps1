@@ -28,17 +28,8 @@ function Block-Package {
     git config --global user.email "helpdesk.choc@gmail.com"
     git config --global user.name "Tunisiano187"
 
-    Install-Module -Name PowerShellForGitHub -Force
-    Import-Module PowerShellForGitHub
-    $secureString = ("$env:GITHUB_TOKEN" | ConvertTo-SecureString -AsPlainText -Force)
-    $cred = New-Object System.Management.Automation.PSCredential "username is ignored", $secureString
-    Set-GitHubAuthentication -Credential $cred
-    $secureString = $null # clear this out now that it's no longer needed
-    $cred = $null # clear this out now that it's no longer needed
-    Set-GitHubConfiguration -DisableTelemetry
-
     [string]$Owner = "tunisiano187"
-    [string]$Repository = "Chocolatey-packages"
+    [string]$Repository = "Choco-packages"
 
     Write-Output "number : $issueNumber"
     Write-Output "Title : $title"
