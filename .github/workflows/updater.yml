@@ -92,7 +92,7 @@ jobs:
           Get-Location
           get-childitem -path "$(Get-Location)\automatic"
           au/update_all.ps1 -ForcedPackages $env:FORCED_PACKAGES
-          Get-EventLogs * | ? Source -eq 'Schannel' | fl * | out-file eventlogs.txt
+          #Get-EventLogs * | ? Source -eq 'Schannel' | fl * | out-file eventlogs.txt
 
       - name: Create diff file
         run: |
