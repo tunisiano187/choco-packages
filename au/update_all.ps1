@@ -7,7 +7,7 @@ if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 $Options = [ordered]@{
     Timeout    = 100                                        #Connection timeout in seconds
     Threads    = 5                                          #Number of background jobs to use
-    Push       = $false #$Env:au_Push -eq 'true'                    #Push to chocolatey
+    Push       = $Env:au_Push -eq 'true'                    #Push to chocolatey
     PluginPath = ''                                         #Path to user plugins
 
     RepeatOn      = @(                                      #Error message parts on which to repeat package updater
@@ -41,11 +41,11 @@ $Options = [ordered]@{
         }
     }
 
-    Gist = @{
-        Id          = ""                                    #Your gist id or leave empty for anonymous
-        ApiKey      = $Env:github_api_key                   #Your github api key
-        Path        = "$PSScriptRoot\Update-AUPacakges.md", "$PSScriptRoot\Update-History.md"  #List of files to add to gist
-    }
+    #Gist = @{
+    #    Id          = ""                                    #Your gist id or leave empty for anonymous
+    #    ApiKey      = $Env:github_api_key                   #Your github api key
+    #    Path        = "$PSScriptRoot\Update-AUPacakges.md", "$PSScriptRoot\Update-History.md"  #List of files to add to gist
+    #}
 
     Git = @{
         User = 'tunisiano187'
