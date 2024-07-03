@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module Chocolatey-AU
 
 $releases = "https://www.winflector.com/english/download.html"
 
