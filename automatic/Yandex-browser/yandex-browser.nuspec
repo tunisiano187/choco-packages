@@ -4,7 +4,7 @@
   <metadata>
     <id>Yandex-browser</id>
     <version>24.6.1.768</version>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/Yandex-browser</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/Yandex-browser</packageSourceUrl>
     <owners>tunisiano</owners>
 
     <title>Yandex-browser (Install)</title>
