@@ -28,9 +28,11 @@ env:
   mail_server: smtp.gmail.com
   mail_port: 587
   mail_enablessl: true
+  mail_attachments: '.\update_info.xml'
+  mail_userMessage: "[Force Test](https://gist.github.com/94c2ec0efd8f0d199af1ae9914bec446)"
 
   #ID of the gist used to save run results
-  gist_id: 508bb89c4cc35b67842940c60310532b
+  gist_id: 94c2ec0efd8f0d199af1ae9914bec446
 
   #Chocolatey API key - to push updated packages
   api_key: ${{ secrets.CHOCO_API_KEY }}
