@@ -91,6 +91,7 @@ jobs:
           Clear-EventLogs
           rm "$env:ChocolateyInstall\logs\*.log"
           au/update_all.ps1 -ForcedPackages $env:FORCED_PACKAGES
+          git pull
           git push origin master
           Get-EventLogs * | ? Source -eq 'Schannel' | fl * | out-file eventlogs.txt
 
