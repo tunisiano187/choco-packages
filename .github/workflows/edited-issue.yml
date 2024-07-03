@@ -9,22 +9,11 @@ jobs:
     if: ${{ github.event.issue.state == 'open' }}
     runs-on: windows-latest
     env:
-      GITHUB_TOKEN: ${{ secrets.AU_GITHUB_API_KEY }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     steps:
       - uses: actions/checkout@v2.2.0
-      - name: Prepare env
-        run: |
-          Install-Module -Name PowerShellForGitHub -Force
-          Import-Module PowerShellForGitHub
-          $secureString = ("$GITHUB_TOKEN" | ConvertTo-SecureString -AsPlainText -Force)
-          $cred = New-Object System.Management.Automation.PSCredential "username is ignored", $secureString
-          Set-GitHubAuthentication -Credential $cred
-          $secureString = $null # clear this out now that it's no longer needed
-          $cred = $null # clear this out now that it's no longer needed
-          Set-GitHubConfiguration -DisableTelemetry
       - name: Check exception
         run: |
-          if($env:GITHUB_TOKEN -eq $null) { throw 'empty' }
           Import-Module "${{ github.workspace }}\scripts\edit.psm1"
           Block-package -title "${{ github.event.issue.title }}" -issueNumber ${{ github.event.issue.number }} -repository "${{ github.event.repository.full_name }}" -actor "${{ github.event.issue.user.login }}"
