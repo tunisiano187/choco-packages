@@ -68,7 +68,7 @@ jobs:
           choco install --no-progress wormies-au-helpers vt-cli -y
           git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
-          import-module scripts/au_extensions.psm1
+          import-module "$(Get-Location)\scripts\au_extensions.psm1"
 
       - name: System information
         run: |
