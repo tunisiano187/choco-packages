@@ -1,8 +1,8 @@
 ﻿name: Package Updater
 
 on:
-  push:
-    branches: [master]
+  #push:
+  #  branches: [master]
   workflow_dispatch: # Enable manual trigger
     inputs:
       packages:
