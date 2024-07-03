@@ -15,5 +15,6 @@ jobs:
       - uses: actions/checkout@v2.2.0
       - name: Check exception
         run: |
+          if($env:AU_GITHUB_API_KEY -eq $null) { throw 'empty' }
           Import-Module "${{ github.workspace }}\scripts\edit.psm1"
           Block-package -title "${{ github.event.issue.title }}" -issueNumber ${{ github.event.issue.number }} -repository "${{ github.event.repository.full_name }}" -actor "${{ github.event.issue.user.login }}"
