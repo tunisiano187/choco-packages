@@ -71,6 +71,16 @@ jobs:
           import-module "$(Get-Location)\scripts\au_extensions.psm1" -global
           choco apikey --key ${{ secrets.CHOCO_API_KEY }} --source https://push.chocolatey.org/
 
+      - name: Install Powershell Modules
+        run: |
+          Install-Module -Name PowerShellForGitHub -Force
+          $secureString = ("${{ secrets.AU_GITHUB_API_KEY }}" | ConvertTo-SecureString -AsPlainText -Force)
+          $cred = New-Object System.Management.Automation.PSCredential "username is ignored", $secureString
+          Set-GitHubAuthentication -Credential $cred
+          $secureString = $null # clear this out now that it's no longer needed
+          $cred = $null # clear this out now that it's no longer needed
+          Set-GitHubConfiguration -DisableTelemetry
+
       - name: System information
         run: |
           Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version
