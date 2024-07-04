@@ -40,7 +40,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>© 2012 Joey Hess</copyright>
     <tags>git sync backup filesharing unattended admin</tags>
     <projectSourceUrl>https://git-annex.branchable.com/recentchanges/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/git-annex</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/git-annex</packageSourceUrl>
     <docsUrl>https://git-annex.branchable.com/</docsUrl>
     <mailingListUrl>https://git-annex.branchable.com/forum/</mailingListUrl>
     <bugTrackerUrl>https://git-annex.branchable.com/bugs/</bugTrackerUrl>

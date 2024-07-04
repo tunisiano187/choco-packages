@@ -59,7 +59,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>Copyright Timothée Giet and others.</copyright>
     <tags>gcompris kids educational game foss cross-platform binary</tags>
     <projectSourceUrl>https://gcompris.net/downloads-fr.html#windows</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gcompris</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/gcompris</packageSourceUrl>
     <docsUrl>https://gcompris.net/wiki/Manual</docsUrl>
     <mailingListUrl>https://mail.kde.org/mailman/listinfo/gcompris-devel</mailingListUrl>
   </metadata>
