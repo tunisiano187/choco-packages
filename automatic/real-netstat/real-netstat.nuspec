@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>real-netstat</id>
-    <version>3.5</version>
+    <version>3.6</version>
     <title>Real NetStat (Trial) (Install)</title>
     <authors>Flexbyte Software</authors>
     <owners>tunisiano</owners>
@@ -20,7 +20,7 @@ Each time when you open a web site in your browser or download files there are T
 
 The answer is to run a command line tool known as netstat.exe. But is it really comfortably to run every time the console and enter the options you want only to print a list of TCP/UDP connections?
 
-##Real NetStat solves this issue!
+## Real NetStat solves this issue!
 
 We offer an advanced but still quite simple in use the program for monitoring Internet connections. Real Netstat and its intuitive and easy-to-use GUI make life simpler and easier not only for network administrators, but for anyone Windows user.
 
@@ -40,9 +40,9 @@ By combining the functionality of command-line netstat.exe utility, Real Netstat
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@f986b7f5de3afc021180256752805698d4efbc38/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>Real NetStat 3.1 - The Powerful Alternative Tool To NetStat.exe Command</summary>
     <releaseNotes />

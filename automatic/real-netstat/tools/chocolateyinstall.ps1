@@ -3,8 +3,8 @@
 $packageName    = 'real-netstat'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://netstatagent.com/files/netagent-setup.exe'
-$checksum       = 'D6AF04B6315BD5FA6E4F434F32EA228B9F6C699BB9104E9D64AEBC9EC38D39CA'
-$checksumType   = 'sha256'
+$checksum       = '92B40EB19E47186EFC49041A540A277DA3C0FA3D3BC80C596F2527E5448773782869669E42B0DFF9CD403FAFD3FC341F5AE7FF50AD5282EDB5E15BF035F7EE12'
+$checksumType   = 'SHA512'
 
 $packageArgs = @{
   packageName   = $packageName
