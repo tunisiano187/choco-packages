@@ -72,10 +72,11 @@ jobs:
           choco apikey --key ${{ secrets.CHOCO_API_KEY }} --source https://push.chocolatey.org/
 
       - name: Install Powershell Modules
+        env:
+          GH_SECRET: ${{ secrets.SuperSecret }}
         run: |
           Install-Module -Name PowerShellForGitHub -Force
-          $Env:github_api_key = ${{ secrets.AU_GITHUB_API_KEY }}
-          $secureString = ("$Env:github_api_key" | ConvertTo-SecureString -AsPlainText -Force)
+          $secureString = ("$env:GH_SECRET" | ConvertTo-SecureString -AsPlainText -Force)
           $cred = New-Object System.Management.Automation.PSCredential "username is ignored", $secureString
           Set-GitHubAuthentication -Credential $cred
           $secureString = $null # clear this out now that it's no longer needed
