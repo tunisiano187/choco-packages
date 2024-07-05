@@ -82,6 +82,7 @@ jobs:
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
           import-module "$(Get-Location)\scripts\au_extensions.psm1" -global
           choco apikey --key ${{ secrets.CHOCO_API_KEY }} --source https://push.chocolatey.org/
+          .\au\requisites.ps1
 
       - name: System information
         run: |
