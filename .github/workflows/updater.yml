@@ -82,7 +82,6 @@ jobs:
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
           import-module "$(Get-Location)\scripts\au_extensions.psm1" -global
           choco apikey --key ${{ secrets.CHOCO_API_KEY }} --source https://push.chocolatey.org/
-          .\au\requisites.ps1
 
       - name: System information
         run: |
@@ -103,6 +102,7 @@ jobs:
           . ./scripts/EventLogs.ps1
           Clear-EventLogs
           rm "$env:ChocolateyInstall\logs\*.log"
+          .\au\requisites.ps1
           au/update_all.ps1 -ForcedPackages $env:FORCED_PACKAGES
           git pull
           git push origin master
