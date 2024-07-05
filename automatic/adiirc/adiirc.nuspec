@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://www.linfo.org/freeware.html</licenseUrl>
     <projectUrl>https://www.adiirc.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@9255dfe32042bcf0251fd593c0bfb3d1c3baa07c/icons/adiirc.ico</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@154fe8b396b7b8fbc8e1096fcaa9481821f52c01/icons/adiirc.ico</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## AdiIRC
 

@@ -12,7 +12,7 @@
     
     <projectUrl>https://veloren.net/</projectUrl>
     <licenseUrl>https://raw.githubusercontent.com/veloren/Airshipper/master/LICENSE</licenseUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@75275dd629e98b1d7b1684156e8fcc1546c6613f/icons/airshipper.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@154fe8b396b7b8fbc8e1096fcaa9481821f52c01/icons/airshipper.png</iconUrl>
     <projectSourceUrl>https://gitlab.com/veloren</projectSourceUrl>
     <mailingListUrl>https://discord.gg/veloren-community-449602562165833758</mailingListUrl>
     <bugTrackerUrl>https://gitlab.com/veloren/airshipper/-/issues</bugTrackerUrl>

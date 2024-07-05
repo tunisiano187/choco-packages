@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://goo.gl/p9o41Q</licenseUrl>
     <projectUrl>https://music.amazon.com/help/apps</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d070656e2bed6a2b71f6a9afe7fd723a28820296/icons/amazon-music.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@154fe8b396b7b8fbc8e1096fcaa9481821f52c01/icons/amazon-music.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Amazon Music (Install)
 
