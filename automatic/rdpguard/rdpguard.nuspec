@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>rdpguard</id>
-    <version>9.7.5</version>
+    <version>9.7.9</version>
     <title>RdpGuard (Trial Install)</title>
     <authors>NetSDK Software</authors>
     <owners>tunisiano</owners>
     <licenseUrl>http://netsdk.com/terms.html</licenseUrl>
     <projectUrl>https://rdpguard.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@e8e9dc1db0530fbd0d7bbf9a802ebad161079794/icons/rdpguard.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@a24077a81ae60cb8ee25eaeb4768bddb50510945/icons/rdpguard.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## RdpGuard (Trial Install)
 
@@ -43,7 +43,7 @@ To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ]
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@f986b7f5de3afc021180256752805698d4efbc38/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>RdpGuard - Intrusion prevention system for your Windows Server</summary>
     <releaseNotes>https://rdpguard.com/news.aspx</releaseNotes>
