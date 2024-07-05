@@ -18,9 +18,9 @@ any other service. In blind tests pitting DeepL Translator against the competiti
 results by a factor of 3:1. DeepL also achieves record-breaking performance according to scientific benchmarks.
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>Deepl Traductor</summary>
     <copyright>© Deepl</copyright>
@@ -29,7 +29,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/deepl</packageSourceUrl>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)</releaseNotes>
     <dependencies>
       <dependency id="dotnetfx" version="4.5" />
     </dependencies>

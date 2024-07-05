@@ -88,6 +88,7 @@ $Options = [ordered]@{
 $global:au_Root = "$PSScriptRoot/../automatic"                           #Path to the AU packages
 $info = updateall -Name $Name -Options $Options
 
+if(1 -eq 2) { $info}
 #Uncomment to fail the build on AppVeyor on any package error
 #if (($null -ne $Env:APPVEYOR_PULL_REQUEST_NUMBER) -and ($Env:APPVEYOR_PULL_REQUEST_NUMBER -ne '')) {
 #    Write-Information "On Appveyor"
