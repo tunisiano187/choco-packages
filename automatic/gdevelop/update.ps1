@@ -23,6 +23,8 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
     $tags = Get-GitHubRelease -OwnerName $Owner -RepositoryName $repo -Latest
     $url32 = $tags.assets.browser_download_url | Where-Object {$_ -match ".exe$"}
+    . ..\..\scripts\Get-FileVersion.ps1
+    $FileVersion = Get-FileVersion $url32
 
     $version = $tags.tag_name.Replace('v','')
     Update-Metadata -key "releaseNotes" -value $tags.html_url
@@ -32,7 +34,7 @@ function global:au_GetLatest {
         $version = "$version-pre$($date)"
     }
 
-    return @{ URL32 = $url32; Version = $version }
+    return @{ URL32 = $url32; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType; Version = $version }
 }
 
-update-package -NoCheckChocoVersion
+update-package -NoCheckChocoVersion -ChecksumFor none
