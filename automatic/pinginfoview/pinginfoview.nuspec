@@ -4,7 +4,7 @@
   <metadata>
     <id>pinginfoview</id>
     <title>PingInfoView</title>
-    <version>3.10.0</version>
+    <version>3.15</version>
     <authors>Nir Sofer</authors>
     <owners>tunisiano</owners>
     <summary>Ping to multiple host names/IP addresses</summary>
@@ -20,7 +20,7 @@ You can also save the ping result into text/html/xml file, or copy it to the cli
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@f986b7f5de3afc021180256752805698d4efbc38/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/pinginfoview</packageSourceUrl>
     <projectUrl>http://www.nirsoft.net/utils/multiple_ping_tool.html</projectUrl>
