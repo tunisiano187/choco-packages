@@ -1368,7 +1368,9 @@ Add-Type @"
 
 "@
 }catch
-{}
+ { 
+    $error++
+ }
 
 }
 
@@ -1385,7 +1387,9 @@ Add-Type @"
 "@
 }
 catch
-{}
+{ 
+    $error++
+}
 
 Add-Type -AssemblyName System.Windows.Forms | Out-Null
 
@@ -7359,7 +7363,8 @@ function GetDomainShortName
         $adObject = $response.Entries[0]
     }
     catch
-    {
+    { 
+        $error++
     }
 
     if($null -ne $adObject)
@@ -7571,7 +7576,8 @@ Function CacheRightsGuids
             $colResults = $searcherSent.Entries
         }
         catch
-        {
+        { 
+            $error++
         }
  		$intCounter = 0
 
@@ -8018,8 +8024,8 @@ else
 
     }
     catch
-    {
-
+    { 
+        $error++
     }
     if($null -ne $strObjectType )
     {
@@ -8094,8 +8100,8 @@ if ($global:strAccNameTranslation -eq "")
 
         }
         catch
-        {
-
+        { 
+            $error++
         }
 
 	    if(!($global:strAccNameTranslation))
@@ -12011,7 +12017,8 @@ if($GPO)
             $GPOdisplayname = $result.attributes.displayname[0]
         }
         catch
-        {
+        { 
+            $error++
         }
     }
 }
@@ -12438,7 +12445,7 @@ if(($global:GetSecErr -ne $true) -or ($global:secd -ne ""))
                                 $ADObject = $response.Entries[0]
 
                                 $recursiveobject = new-object psobject
-                                add-member -inputobject $recursiveobject -MemberType NoteProperty -Name "IdentityReference"     -Value $(try{GetSidStringFromSidByte $ADObject.attributes.objectsid.GetValues([byte[]])[0]}catch{})
+                                add-member -inputobject $recursiveobject -MemberType NoteProperty -Name "IdentityReference"     -Value $(try{GetSidStringFromSidByte $ADObject.attributes.objectsid.GetValues([byte[]])[0]}catch{ $error++})
                                 add-member -inputobject $recursiveobject -MemberType NoteProperty -Name "ActiveDirectoryRights" -Value $ace.ActiveDirectoryRights
                                 add-member -inputobject $recursiveobject -MemberType NoteProperty -Name "InheritanceType"       -Value $ace.InheritanceType
                                 add-member -inputobject $recursiveobject -MemberType NoteProperty -Name "ObjectType"            -Value $ace.ObjectType
@@ -13136,7 +13143,8 @@ while($count -le $AllObjectDn.count -1)
                 $GPOdisplayname = $result.attributes.displayname[0]
             }
             catch
-            {
+            { 
+                $error++
             }
         }
     }
@@ -16609,7 +16617,8 @@ if($base -or $GPO)
                 $strNode = fixfilename $response.Entries[0].Attributes.name[0]
             }
             catch
-            {
+            { 
+                $error++
             }
 
             if($GPO)
