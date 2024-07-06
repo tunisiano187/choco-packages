@@ -1,5 +1,6 @@
-﻿$ErrorActionPreference = 'Stop'
-import-module au
+$ErrorActionPreference = 'Stop'
+import-module Chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 
 $release = 'https://ftp.binance.com/electron-desktop/windows/production/binance-setup.exe'
 
