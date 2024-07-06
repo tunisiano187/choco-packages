@@ -76,7 +76,7 @@ function Update-Metadata {
         [Parameter(Mandatory = $true, ParameterSetName = "Single")]
         [string]$value,
         [Parameter(Mandatory = $true, ParameterSetName = "Multiple", ValueFromPipeline = $true)]
-        [hashtable]$data = @{ $key = $value },
+        [hashtable]$data,
         [ValidateScript( { Test-Path $_ })]
         [SupportsWildcards()]
         [string]$NuspecFile = ".\*.nuspec"
