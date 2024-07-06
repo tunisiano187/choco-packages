@@ -1,4 +1,5 @@
-﻿import-module au
+import-module Chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 
 $release = 'https://www.ubackup.com/server.html'
 
