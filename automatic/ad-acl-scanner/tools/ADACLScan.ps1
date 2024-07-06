@@ -1368,7 +1368,7 @@ Add-Type @"
 
 "@
 }catch
- { 
+ {
     $error++
  }
 
@@ -1387,7 +1387,7 @@ Add-Type @"
 "@
 }
 catch
-{ 
+{
     $error++
 }
 
@@ -7363,7 +7363,7 @@ function GetDomainShortName
         $adObject = $response.Entries[0]
     }
     catch
-    { 
+    {
         $error++
     }
 
@@ -7576,7 +7576,7 @@ Function CacheRightsGuids
             $colResults = $searcherSent.Entries
         }
         catch
-        { 
+        {
             $error++
         }
  		$intCounter = 0
@@ -8024,7 +8024,7 @@ else
 
     }
     catch
-    { 
+    {
         $error++
     }
     if($null -ne $strObjectType )
@@ -8100,7 +8100,7 @@ if ($global:strAccNameTranslation -eq "")
 
         }
         catch
-        { 
+        {
             $error++
         }
 
@@ -12017,7 +12017,7 @@ if($GPO)
             $GPOdisplayname = $result.attributes.displayname[0]
         }
         catch
-        { 
+        {
             $error++
         }
     }
@@ -13143,7 +13143,7 @@ while($count -le $AllObjectDn.count -1)
                 $GPOdisplayname = $result.attributes.displayname[0]
             }
             catch
-            { 
+            {
                 $error++
             }
         }
@@ -16617,7 +16617,7 @@ if($base -or $GPO)
                 $strNode = fixfilename $response.Entries[0].Attributes.name[0]
             }
             catch
-            { 
+            {
                 $error++
             }
 
