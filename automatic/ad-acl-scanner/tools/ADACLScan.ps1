@@ -7125,7 +7125,9 @@ if ($Scope -eq "onelevel")
                     $nodelist += $firstnode
                 }
                 catch
-                {}
+                { 
+                    $error++
+                }
                 $intNomatch++
 
             }
@@ -16041,7 +16043,7 @@ Function Find-RiskyTemplates
     [ValidateNotNull()]
     [ValidateNotNullOrEmpty()]
     [String]
-    $ConfigurationDN="",
+    $ConfigurationDN,
 
     [Parameter(Mandatory=$false)]
     [pscredential]
