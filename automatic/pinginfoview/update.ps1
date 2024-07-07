@@ -33,7 +33,7 @@ function global:au_GetLatest {
 	$FileVersion = Get-FileVersion $url32 -keep
 	Move-Item $FileVersion.TempFile -Destination $File
 	Expand-Archive $File -DestinationPath .\piv
-	
+
 	$version=$(Get-Content .\piv\readme.txt | Where-Object {$_ -match '\* Version'})[0].split(' ')[2]
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
