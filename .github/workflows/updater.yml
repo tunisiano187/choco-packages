@@ -98,7 +98,7 @@ jobs:
         env:
           FORCED_PACKAGES: ${{ github.event.inputs.packages }}
         run: |
-          $Env:github_api_key = ${{ secrets.AU_GITHUB_API_KEY }}
+          $Env:github_api_key = $env:AU_GITHUB_API_KEY
           . ./scripts/EventLogs.ps1
           Clear-EventLogs
           rm "$env:ChocolateyInstall\logs\*.log"
