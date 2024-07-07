@@ -29,13 +29,14 @@ function global:au_AfterUpdate($Package) {
 
 function global:au_GetLatest {
 	$File = "tools/pinginfoview.zip"
-	Invoke-WebRequest -Uri $url32 -OutFile $File -UseBasicParsing
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion $url32 -keep
+	Move-Item $FileVersion.TempFile -Destination $File
 	Expand-Archive $File -DestinationPath .\piv
-	$checksum = (Get-FileHash -Path $File -Algorithm $env:ChocolateyChecksumType)
-
+	
 	$version=$(Get-Content .\piv\readme.txt | Where-Object {$_ -match '\* Version'})[0].split(' ')[2]
 
-	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $checksum; ChecksumType32 = $env:ChocolateyChecksumType }
+	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
 	return $Latest
 }
 
