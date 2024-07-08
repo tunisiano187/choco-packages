@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>gsuite-migration-outlook</id>
-    <version>4.3.2.0</version>
+    <version>4.3.23.0</version>
     <title>G Suite Migration for Microsoft Outlook® (GSMMO) (Install)</title>
     <authors>Google</authors>
     <owners>tunisiano</owners>
@@ -40,12 +40,12 @@ Now you can migrate email, contacts and calendar data from Microsoft Outlook® p
 - Microsoft Outlook 2016® (32 and 64 bit)
 
 #### [choco://gsuite-migration-outlook](choco://gsuite-migration-outlook)
-To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
+To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support](https://chocolatey.org/packages/choco-protocol-support)
 
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@f986b7f5de3afc021180256752805698d4efbc38/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>GSMMO - a tool to migrate Microsoft Outlook data to G Suite.</summary>
     <releaseNotes>https://support.google.com/a/users/answer/1283788</releaseNotes>
