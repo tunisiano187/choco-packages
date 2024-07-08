@@ -27,7 +27,7 @@ This is a fully functional version of Winflector software for two concurrent wor
 [Winflector Client](https://chocolatey.org/packages/winflector-client)
 
 # False Positive
-[![](https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@a6b799178c1da8fbf40ccda0eb235a763e71b5a8/automatic/winflector/tools/False_Positive.PNG)](https://chocolatey.org/packages/winflector)
+[![](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@2a8f49f3df4f5baee6ea16d82a13063735ccd667/automatic/winflector/False_Positive.PNG)](https://chocolatey.org/packages/winflector)
 
 #### [choco://winflector](choco://winflector)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
