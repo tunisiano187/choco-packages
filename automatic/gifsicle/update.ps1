@@ -1,7 +1,6 @@
 $ErrorActionPreference = 'Stop'
 import-module Chocolatey-AU
 Import-Module ..\..\scripts\au_extensions.psm1
-Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $releases = 'https://eternallybored.org/misc/gifsicle/'
 
