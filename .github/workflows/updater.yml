@@ -20,7 +20,7 @@ env:
 
   # Github token to commit pushed packages to repository
   github_user_repo: ${{ github.repository }}
-  github_api_key: ${{ secrets.AU_GITHUB_API_KEY }}
+  github_api_key: ${{ secrets.GITHUB_TOKEN }}
 
   # Mail credentials - for error notifications
   mail_user: ${{ secrets.MAIL_USER }}
@@ -98,7 +98,7 @@ jobs:
         env:
           FORCED_PACKAGES: ${{ github.event.inputs.packages }}
         run: |
-          $Env:github_api_key = $env:AU_GITHUB_API_KEY
+          $Env:github_api_key = ${{ secrets.AU_GITHUB_API_KEY }}
           . ./scripts/EventLogs.ps1
           Clear-EventLogs
           rm "$env:ChocolateyInstall\logs\*.log"
