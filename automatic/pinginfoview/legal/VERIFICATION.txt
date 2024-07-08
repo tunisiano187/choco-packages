@@ -16,7 +16,7 @@ and can be verified by doing the following:
     - Use Chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum: @{Algorithm=SHA256; Hash=E96FA0A5AD2E5146210CCED8ABE290E16989E3FEE89B9DFC18CB25406CA5D258; Path=D:\a\choco-packages\choco-packages\automatic\pinginfoview\tools\pinginfoview.zip}
+  checksum: E96FA0A5AD2E5146210CCED8ABE290E16989E3FEE89B9DFC18CB25406CA5D258
 
 Using AU:
 
