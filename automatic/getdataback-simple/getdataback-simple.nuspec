@@ -7,7 +7,7 @@
     <authors>Runtime Software</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://www.runtime.org/data-recovery-software.htm</projectUrl>
-    <iconUrl>https://cdn.staticaly.com/gh/bcurran3/ChocolateyPackages/master/getdataback-simple/GetDataBackSimple_icon.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@1d4a84995456a422f7c5ce8aa54b3b332885e4ed/icons/getdataback-simple.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## GetDataBack Pro (Trial)(Install)
 
