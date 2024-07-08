@@ -28,7 +28,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = "tools/pinginfoview.zip"
+	$File = "./tools/pinginfoview.zip"
 	. ..\..\scripts\Get-FileVersion.ps1
 	$FileVersion = Get-FileVersion $url32 -keep
 	Move-Item $FileVersion.TempFile -Destination $File
