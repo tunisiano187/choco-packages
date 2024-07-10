@@ -1,5 +1,6 @@
-﻿$ErrorActionPreference = 'Stop'
-import-module au
+$ErrorActionPreference = 'Stop'
+import-module Chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://api.github.com/repos/dbohdan/initool/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3

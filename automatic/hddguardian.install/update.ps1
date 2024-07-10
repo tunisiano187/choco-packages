@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module Chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 
 $release = "https://files1.majorgeeks.com/10afebdbffcd4742c81a3cb0f6ce4092156b4375/drives/hddguardian_0.7.1-setup.exe"
 

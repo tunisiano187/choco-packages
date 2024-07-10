@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
-import-module au
+import-module Chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://docs.microsoft.com/fr-be/sysinternals/downloads/handle'
 
