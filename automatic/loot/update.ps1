@@ -1,4 +1,5 @@
-﻿import-module au
+import-module Chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://github.com/loot/loot/releases/latest'
 $Owner = $releases.Split('/') | Select-Object -Last 1 -Skip 3
