@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
 <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/real-netstat</packageSourceUrl>
     <projectUrl>https://netstatagent.com/real-netstat/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@a5cbf551f8ec43e6c634671fd139b59470666ff9/icons/real-netstat.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@72b79405e7b2ec3fb01971eaf4951d52d9955c09/icons/real-netstat.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Real NetStat (Trial) (Install)
 
