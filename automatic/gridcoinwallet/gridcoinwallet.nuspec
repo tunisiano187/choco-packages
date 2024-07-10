@@ -31,7 +31,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <summary>Gridcoin is an open source cryptocurrency which securely rewards volunteer computing performed on the BOINC platform.</summary>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)</releaseNotes>
     <copyright>2014-2019 Gridcoin Developers</copyright>
     <tags>gridcoin wallet grc crypto cryptocurrency</tags>
     <projectSourceUrl>https://github.com/gridcoin-community/Gridcoin-Research</projectSourceUrl>
