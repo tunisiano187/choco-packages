@@ -25,7 +25,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <bugTrackerUrl>https://gramps-project.org/bugs</bugTrackerUrl>
     <docsUrl>https://gramps-project.org/wiki/</docsUrl>
     <mailingListUrl>https://gramps-project.org/introduction-WP/contact/</mailingListUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/gramps.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@5bec0e603e8499607c6625b8d48fc9003ea2430e/icons/gramps.svg</iconUrl>
     <tags>genealogy family-tree admin</tags>
     <copyright>© Gramps Project</copyright>
     <licenseUrl>https://github.com/gramps-project/gramps/blob/master/COPYING</licenseUrl>
