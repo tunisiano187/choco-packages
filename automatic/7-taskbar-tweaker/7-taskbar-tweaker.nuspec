@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <projectUrl>https://ramensoftware.com/7-taskbar-tweaker</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@8d27386674c94a1cf541804cf91982e3908e9d16/icons/7-taskbar-tweaker.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@0de4e072b92d8dca4eb00d3cbb54490d3b1b080b/icons/7-taskbar-tweaker.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>7+ Taskbar Tweaker allows you to configure various aspects of the Windows taskbar.
 Most of the configuration options it provides can’t be tweaked using the taskbar properties or the registry.
