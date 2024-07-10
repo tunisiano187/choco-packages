@@ -46,7 +46,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <releaseNotes>https://support.google.com/a/answer/162794</releaseNotes>
     <copyright>Google</copyright>
     <tags>gsmme google gsuite gapps migration exchange server</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gsuite-migration-exchange</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/gsuite-migration-exchange</packageSourceUrl>
     <docsUrl>https://www.google.com/support/enterprise/static/gapps/docs/admin/en/gapps_exchange_migration/index.html</docsUrl>
   </metadata>
   <files>

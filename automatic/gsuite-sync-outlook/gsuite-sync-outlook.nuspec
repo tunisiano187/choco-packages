@@ -39,7 +39,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <releaseNotes>https://support.google.com/a/answer/153463</releaseNotes>
     <copyright>Google</copyright>
     <tags>google workspace gwsmo gssmo gsuite gapps migration sync outlook</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gsuite-sync-outlook</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/gsuite-sync-outlook</packageSourceUrl>
     <docsUrl>https://support.google.com/a/answer/150403</docsUrl>
     <mailingListUrl>https://support.google.com/a/community/</mailingListUrl>
     <bugTrackerUrl>https://support.google.com/a/answer/153463</bugTrackerUrl>

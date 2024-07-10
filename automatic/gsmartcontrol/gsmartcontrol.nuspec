@@ -28,7 +28,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>© Alexander Shaduri</copyright>
     <tags>smart hdd hardware disk reporting monitoring gui admin</tags>
     <projectSourceUrl>https://sourceforge.net/p/gsmartcontrol/code/HEAD/tree/trunk/gsmartcontrol/</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gsmartcontrol</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/gsmartcontrol</packageSourceUrl>
     <docsUrl>https://gsmartcontrol.shaduri.dev/usage</docsUrl>
     <bugTrackerUrl>https://github.com/ashaduri/gsmartcontrol/issues</bugTrackerUrl>
   </metadata>

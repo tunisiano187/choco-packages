@@ -35,7 +35,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>2014-2019 Gridcoin Developers</copyright>
     <tags>gridcoin wallet grc crypto cryptocurrency</tags>
     <projectSourceUrl>https://github.com/gridcoin-community/Gridcoin-Research</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/gridcoinwallet</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/gridcoinwallet</packageSourceUrl>
     <docsUrl>https://github.com/gridcoin-community/Gridcoin-Wiki/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/gridcoin-community/Gridcoin-Research/issues</bugTrackerUrl>
   </metadata>
