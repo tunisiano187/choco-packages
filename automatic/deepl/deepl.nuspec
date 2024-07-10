@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.deepl.com/en/pro-license?tab=free</licenseUrl>
     <projectUrl>https://www.deepl.com/translator</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@3d083e0231f9e8664e98248e62ac1ba65ac15ebf/icons/deepl.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@db5f5d4332822e4e1a539a7f8c05a318659372bb/icons/deepl.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Deepl
 The World’s Best Machine Translation
