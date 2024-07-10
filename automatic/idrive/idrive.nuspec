@@ -45,7 +45,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 
 #### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
-* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
+* Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)</releaseNotes>
     <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/idrive</packageSourceUrl>
     <dependencies>
       <dependency id="KB2919355" version="1.0.20160915" />
