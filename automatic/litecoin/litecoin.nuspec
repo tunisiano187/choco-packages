@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
     <projectUrl>https://litecoin.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a4858c54c7c77d0b95fbe6d4a55731fd7051ed2a/icons/litecoin.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d66f2f1efd8e6f0a9db7d63313b49fb987254244/icons/litecoin.svg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Litecoin
 Litecoin is a peer-to-peer Internet currency that enables instant, near-zero cost payments to anyone in the world. 
