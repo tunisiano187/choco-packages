@@ -5,6 +5,6 @@ Intelligent standby list cleaner (ISLC) will monitor and clear the memory standb
 It should help users who have stutters in games when using windows 10 Creator update and higher version of windows.
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@f986b7f5de3afc021180256752805698d4efbc38/icons/patreon.png)](https://www.patreon.com/tunisiano)
