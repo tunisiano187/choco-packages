@@ -12,7 +12,7 @@
     <licenseUrl>https://github.com/lbryio/lbry-desktop/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/lbryio/lbry-desktop</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/lbry</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/lbry</packageSourceUrl>
     <docsUrl>https://lbry.com/faq</docsUrl>
     <bugTrackerUrl>https://github.com/lbryio/lbry-desktop/issues</bugTrackerUrl>
     <tags>foss browser client lbry</tags>

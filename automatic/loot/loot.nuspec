@@ -34,7 +34,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>� WrinklyNinja</copyright>
     <tags>loot loadorder load order optimisation tool load-order mod mods modmanager mod-manager modding skyrim oblivion fallout tes elder scrolls tesiv tesv fallout3 fallout4 fo</tags>
     <projectSourceUrl>https://github.com/loot/loot</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/loot</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/loot</packageSourceUrl>
     <docsUrl>https://loot.github.io/docs</docsUrl>
     <mailingListUrl>https://www.afkmods.com/index.php?/topic/5042-relz-loot-load-order-optimisation-tool</mailingListUrl>
     <bugTrackerUrl>https://github.com/loot/loot/issues</bugTrackerUrl>

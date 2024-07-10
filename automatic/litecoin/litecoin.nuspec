@@ -45,7 +45,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>© 2012 Litecoin Project</copyright>
     <tags>litecoin ltc blockchain wallet cryptocurrency p2p admin</tags>
     <projectSourceUrl>https://github.com/litecoin-project/litecoin</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/litecoin</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/litecoin</packageSourceUrl>
     <docsUrl>https://litecoin.info/</docsUrl>
     <mailingListUrl>https://litecointalk.org/</mailingListUrl>
     <bugTrackerUrl>https://github.com/litecoin-project/litecoin/issues</bugTrackerUrl>

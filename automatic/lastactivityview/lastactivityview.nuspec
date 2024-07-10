@@ -29,7 +29,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)</releaseNotes>
   <copyright>© NirSoft</copyright>
     <tags>activity viewer log</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/lastactivityview</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/lastactivityview</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
