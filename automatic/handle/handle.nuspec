@@ -27,7 +27,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>© Mark Russinovich</copyright>
     <tags>file lock tools sysinternals cli</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/handle</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/handle</packageSourceUrl>
     <mailingListUrl>http://forum.sysinternals.com/</mailingListUrl>
   </metadata>
   <files>

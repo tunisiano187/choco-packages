@@ -26,7 +26,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright> © 2024 D. Bohdan</copyright>
     <tags>configuration ini cli</tags>
     <projectSourceUrl>https://github.com/dbohdan/initool</projectSourceUrl>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/initool</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/initool</packageSourceUrl>
     <docsUrl>https://github.com/dbohdan/initool#operation</docsUrl>
     <bugTrackerUrl>https://github.com/dbohdan/initool/issues</bugTrackerUrl>
   </metadata>
