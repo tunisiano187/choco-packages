@@ -47,7 +47,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>Â© 2024 NirSoft</copyright>
     <tags>recover mail email gmail password lost crack outlook express microsoft incredimail eudora</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mailpv.portable</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/mailpv.portable</packageSourceUrl>
   </metadata>
   <files>
     <file src="legal\**" target="legal" />
