@@ -36,7 +36,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <summary>Monosnap is a perfect screenshot tool for Windows</summary>
     <copyright>Monosnap</copyright>
     <tags>admin screenshot</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/monosnap</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/monosnap</packageSourceUrl>
     <dependencies>
       <dependency id="vcredist2015" />
     </dependencies>
