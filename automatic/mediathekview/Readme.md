@@ -7,3 +7,8 @@ The MediathekView program (abbreviated: MV) is a kind of search engine for films
 - `/InstallDir:` - The path to use when installing MediaThekView
 
 Example: `choco install --package-parameters="'/InstallDir:C:\Program Files\MediaThekView'"`
+
+### Package-specific issue
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
+
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@f986b7f5de3afc021180256752805698d4efbc38/icons/patreon.png)](https://www.patreon.com/tunisiano)
