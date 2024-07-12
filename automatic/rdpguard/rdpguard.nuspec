@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>http://netsdk.com/terms.html</licenseUrl>
     <projectUrl>https://rdpguard.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@78cd2ce5d797366ecf37216b21ea3a282510f7d0/icons/rdpguard.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@eba56451eb7facfbd4614aead70ba8a5b7135bf9/icons/rdpguard.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## RdpGuard (Trial Install)
 
