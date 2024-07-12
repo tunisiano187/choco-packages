@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://www.gnu.org/licenses/gpl.html</licenseUrl>
     <projectUrl>https://gcompris.net/index-en.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@6159df57c3b316897a1595535486224acabeba64/icons/gcompris.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@78cd2ce5d797366ecf37216b21ea3a282510f7d0/icons/gcompris.png</iconUrl>
     <description><![CDATA[## GCompris (Install)
 ![Screenshot of GCompris](https://gcompris.net/screenshots_qt/small/root.png)
 

@@ -23,7 +23,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <tags>Java DB DbVis DBVisualizer</tags>
     <licenseUrl>http://www.dbvis.com/eula/</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@a24077a81ae60cb8ee25eaeb4768bddb50510945/icons/db-visualizer.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@78cd2ce5d797366ecf37216b21ea3a282510f7d0/icons/db-visualizer.png</iconUrl>
     <releaseNotes>#### Package
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)
 * Package not up-to-date after a few days ? [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)</releaseNotes>

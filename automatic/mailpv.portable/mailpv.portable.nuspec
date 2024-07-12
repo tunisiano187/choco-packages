@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/mailpv.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/mailpv.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@c80d918cd02f525ecd3c11fa955d2b67818891c9/icons/mailpv.portable.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@3fca58ba81115ba1e791ebac3f64839c8d408760/icons/mailpv.portable.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Mail PassView (Portable)
 
