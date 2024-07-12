@@ -1,4 +1,5 @@
-﻿Import-Module AU
+import-module Chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 import-module "$PSScriptRoot/../../scripts/au_extensions.psm1"
 
 $releases = 'https://download.mediathekview.de/stabil/'
