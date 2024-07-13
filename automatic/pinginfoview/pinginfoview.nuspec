@@ -24,7 +24,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 ]]></description>
     <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/pinginfoview</packageSourceUrl>
     <projectUrl>http://www.nirsoft.net/utils/multiple_ping_tool.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@eba56451eb7facfbd4614aead70ba8a5b7135bf9/icons/pinginfoview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@e2051d5275425628514fcce0d623c456051d4efb/icons/pinginfoview.png</iconUrl>
     <tags>ping ip address host</tags>
     <copyright>© 2008 NirSoft</copyright>
     <licenseUrl>http://www.nirsoft.net/utils/multiple_ping_tool.html</licenseUrl>

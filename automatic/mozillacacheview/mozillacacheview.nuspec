@@ -8,7 +8,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://www.nirsoft.net/utils/mozilla_cache_viewer.html</licenseUrl>
     <projectUrl>https://www.nirsoft.net/utils/mozilla_cache_viewer.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@856ce58e52f9df86243fc3a017cdfd1f9115161c/icons/mozillacacheview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@9d9ac8e09c030b5b9411fa610a59cfedb978ad7c/icons/mozillacacheview.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## MozillaCacheView
 
@@ -28,7 +28,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
 * Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
     <copyright>Â© 2024 NirSoft</copyright>
     <tags>mozilla cache extract web browser</tags>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mozillacacheview</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/mozillacacheview</packageSourceUrl>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

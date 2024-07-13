@@ -25,12 +25,12 @@ If this package isn't up-to-date for some days, [Create an issue](https://github
 
 [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/bePatron?u=39585820)
 ]]></description>
-    <packageSourceUrl>https://github.com/tunisiano187/Chocolatey-packages/tree/master/automatic/mobizen</packageSourceUrl>
+    <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/mobizen</packageSourceUrl>
     <projectUrl>https://www.mobizen.com/</projectUrl>
     <bugTrackerUrl>http://support-mirroring.mobizen.com/hc/requests/new</bugTrackerUrl>
     <docsUrl>http://support-mirroring.mobizen.com/</docsUrl>
     <mailingListUrl>https://plus.google.com/communities/102731918517125954346</mailingListUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@fcb8e3a65c117d6b1837d5c0cc79fa8c27b495cd/icons/mobizen.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@9d9ac8e09c030b5b9411fa610a59cfedb978ad7c/icons/mobizen.png</iconUrl>
     <tags>android remote screen-mirroring admin</tags>
     <copyright>© RSUPPORT Co., Ltd.</copyright>
     <licenseUrl>http://support.mobizen.com/hc/articles/216463647</licenseUrl>
