@@ -9,7 +9,7 @@
 <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/agentsvn</packageSourceUrl>
     <licenseUrl>http://www.zeusedit.com/agent/bin/license.txt</licenseUrl>
     <projectUrl>http://www.zeusedit.com/agent/index.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d4f78709f08772d793d7dc0524bb31bca8c13c22/icons/agentsvn.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@50fde2ea33f9f3277b4cdae4abd95b438dc8f6e5/icons/agentsvn.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## AgentSVN
 

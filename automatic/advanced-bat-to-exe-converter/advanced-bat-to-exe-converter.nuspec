@@ -9,7 +9,7 @@
     <title>Advanced BAT to EXE Converter (Install)</title>
     <authors>Brandon Dargo</authors>
     <projectUrl>https://www.battoexeconverter.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d4f78709f08772d793d7dc0524bb31bca8c13c22/icons/advanced-bat-to-exe-converter.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@50fde2ea33f9f3277b4cdae4abd95b438dc8f6e5/icons/advanced-bat-to-exe-converter.png</iconUrl>
     <copyright>Copyright Brandon Dargo</copyright>
     <licenseUrl>https://www.battoexeconverter.com/Buy-Pro/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
