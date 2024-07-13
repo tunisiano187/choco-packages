@@ -110,7 +110,7 @@ jobs:
 
       - name: Create diff file
         run: |
-          git add automatic manual
+          git add automatic
           git diff --cached > unsaved_changes.patch
 
       - name: Create au temporary directory
