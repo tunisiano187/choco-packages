@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://technet.microsoft.com/en-us/sysinternals/bb469936</licenseUrl>
     <projectUrl>http://technet.microsoft.com/sysinternals/bb963902</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@c7d881d955d4b19370bffedc4652ee3e7149e7bf/icons/autoruns.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@7e911df8ad4a6635b3a6335ab6968b23f652c622/icons/autoruns.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[## Autoruns
 See what programs are configured to startup automatically when your system boots and you login. 
