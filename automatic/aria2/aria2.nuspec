@@ -41,7 +41,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <copyright>© Tatsuhiro Tsujikawa</copyright>
     <licenseUrl>https://github.com/tatsuhiro-t/aria2/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@7e911df8ad4a6635b3a6335ab6968b23f652c622/icons/aria2.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d4f78709f08772d793d7dc0524bb31bca8c13c22/icons/aria2.png</iconUrl>
     <releaseNotes>
 #### Program
 * [Changelog](https://github.com/tatsuhiro-t/aria2/releases/)

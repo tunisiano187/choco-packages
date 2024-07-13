@@ -9,7 +9,7 @@
     <owners>tunisiano</owners>
     <licenseUrl>https://raw.githubusercontent.com/arduino/Arduino/master/license.txt</licenseUrl>
     <projectUrl>https://www.arduino.cc/en/software</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@7e911df8ad4a6635b3a6335ab6968b23f652c622/icons/arduino.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d4f78709f08772d793d7dc0524bb31bca8c13c22/icons/arduino.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description><![CDATA[# Arduino
 

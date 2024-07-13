@@ -7,7 +7,7 @@
     <authors>Chris Knepper</authors>
     <owners>tunisiano</owners>
     <projectUrl>https://github.com/chrisknepper/android-messages-desktop</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@7e911df8ad4a6635b3a6335ab6968b23f652c622/icons/android-messages-desktop.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d4f78709f08772d793d7dc0524bb31bca8c13c22/icons/android-messages-desktop.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Run Android Messages as a desktop app, a la iMessage. For those of us that prefer not to have a browser tab always open for this sort of thing.
 

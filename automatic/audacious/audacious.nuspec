@@ -25,7 +25,7 @@ Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunis
     <projectSourceUrl>https://github.com/audacious-media-player/audacious</projectSourceUrl>
     <bugTrackerUrl>https://redmine.audacious-media-player.org/projects/audacious/issues</bugTrackerUrl>
     <mailingListUrl>https://redmine.audacious-media-player.org/projects/audacious/boards</mailingListUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@7e911df8ad4a6635b3a6335ab6968b23f652c622/icons/audacious.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d4f78709f08772d793d7dc0524bb31bca8c13c22/icons/audacious.png</iconUrl>
     <tags>audio player equalizer</tags>
     <copyright>© Audacious</copyright>
     <licenseUrl>https://github.com/audacious-media-player/audacious/blob/master/COPYING</licenseUrl>
