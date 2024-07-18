@@ -27,7 +27,7 @@ function Get-FileVersion {
     )
     if($env:ChocolateyChecksumType) { $checksumType = $env:ChocolateyChecksumType }
 
-    if($null -ne $url) {
+    if($url.Trim().Length -gt 0) {
         $tempFile = Join-Path $env:TEMP $($url.split('/')[-1])
         import-module C:\ProgramData\chocolatey\helpers\chocolateyInstaller.psm1 -ErrorAction SilentlyContinue -Force
         try {
@@ -43,11 +43,18 @@ function Get-FileVersion {
         }
         Invoke-WebRequest -Uri $url -OutFile $tempFile
         try {
-            [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
+            if($([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim().Length -eq 0) {
+                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
+            } else {
+                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim()
+            }
             $FileSize = (((Get-Item -Path $tempFile).Length)/1MB)
         }
         catch {
             $version=$null
+        }
+        if($null -eq $version -and $null -ne $url) {
+            $version = (Get-Version $url).Version
         }
         try {
             $FileSize = (((Get-Item -Path $tempFile).Length)/1MB)
@@ -62,7 +69,11 @@ function Get-FileVersion {
         }
     } else {
         try {
-            [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).trim()
+            if($([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim().Length -eq 0) {
+                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).trim()
+            } else {
+                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).ProductVersion).trim()
+            }
         }
         catch {
             $version=$null
