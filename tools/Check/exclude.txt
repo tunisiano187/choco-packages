@@ -195,3 +195,4 @@ xmeters
 zimbra-desktop
 zona
 mossawir-lan-messenger
+duplicatecleaner
