@@ -43,18 +43,20 @@ function Get-FileVersion {
         }
         Invoke-WebRequest -Uri $url -OutFile $tempFile
         try {
-            if($([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim().Length -eq 0) {
-                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
-            } else {
-                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim()
-            }
-            $FileSize = (((Get-Item -Path $tempFile).Length)/1MB)
+            [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim()
         }
         catch {
-            $version=$null
-        }
-        if($null -eq $version -and $null -ne $url) {
-            $version = (Get-Version $url).Version
+            try {
+                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
+            }
+            catch {
+                try {
+                    $version = (Get-Version $url).Version
+                }
+                catch {
+                    $version=$null
+                }
+            }
         }
         try {
             $FileSize = (((Get-Item -Path $tempFile).Length)/1MB)
@@ -69,14 +71,20 @@ function Get-FileVersion {
         }
     } else {
         try {
-            if($([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim().Length -eq 0) {
-                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion).trim()
-            } else {
-                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).ProductVersion).trim()
-            }
+            [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).ProductVersion).trim()
         }
         catch {
-            $version=$null
+            try {
+                [version]$version=$([System.Diagnostics.FileVersionInfo]::GetVersionInfo($tempFile).FileVersion).trim()
+            }
+            catch {
+                try {
+                    $version = (Get-Version $url).Version
+                }
+                catch {
+                    $version=$null
+                }
+            }
         }
         $checksum = (Get-FileHash -Path $File -Algorithm $checksumType).Hash
     }
