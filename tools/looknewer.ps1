@@ -35,7 +35,7 @@ Get-Content $excludefile | Sort-Object | Select-Object -Unique | Set-Content $ex
 "Check if there are open issues"
 
 # Check if there is a waiting issue
-if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | Where-Object {$_.labels.name -notmatch "Waiting_maintainer_answer"} | Where-Object {$_.outerHTML -notmatch "Dependency Dashboard"})) {
+if((Get-GitHubIssue -OwnerName $Owner -RepositoryName $Repository -State Open | Where-Object {$_.labels.name -notmatch "Waiting_maintainer_answer"} | Where-Object {$_.title -notmatch "Dependency Dashboard"})) {
     Write-Warning "Some issues are still open"
     Write-Warning "Not checking for broken packages"
 } else {
