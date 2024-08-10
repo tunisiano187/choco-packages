@@ -198,3 +198,4 @@ mossawir-lan-messenger
 duplicatecleaner
 domainhostingview
 contig
+jacksum
