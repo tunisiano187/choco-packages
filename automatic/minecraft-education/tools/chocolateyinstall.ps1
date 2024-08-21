@@ -3,15 +3,15 @@
 
 $packageName      = $env:ChocolateyPackageName
 $url              = 'https://aka.ms/downloadmee-desktopApp'
-$checksum         = '16afbbce2cc43a360148b426351628d667e5c4cd0011f71df9e65b0e2c82abb3'
-$checksumType     = 'sha256'
+$checksum         = 'DF1E49C10839FFDD522A76D98CDA185F4E351E5575ABEEC639A73667CA263CF1C2F2A4741371A2CF6AF069C98A4F7D08E07FFA6577ED0D5C3EF553C60AB65DEC'
+$checksumType     = 'SHA512'
 
 $packageArgs = @{
   packageName     = $packageName
   fileType        = 'exe'
   url             = $url
 
-  silentArgs      = "/qn /exenoui /norestart /l*v `"$env:TEMP\chocolatey\$($packageName)\$($packageName).MsiInstall.log`""
+  silentArgs      = "/qn"
   validExitCodes  = @(0, 1603, 3010, 1641, 1622)
 
   softwareName    = "$packageName*"
