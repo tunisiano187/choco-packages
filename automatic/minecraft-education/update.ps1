@@ -23,8 +23,8 @@ function global:au_GetLatest {
 	$FileVersion = Get-FileVersion -url $release
 
 
-	$Latest = @{ URL32 = $release; Version = $FileVersion.Version; Checksum32 = $FileVersion.Checksum32; ChecksumType32 = $FileVersion.checksumType }
+	$Latest = @{ URL32 = $release; Version = $FileVersion.Version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.checksumType }
 	return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor none -NoCheckChocoVersion
