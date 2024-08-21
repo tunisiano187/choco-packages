@@ -19,12 +19,12 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-	$File = Join-Path $env:TEMP "minecraft.exe"
-	Invoke-WebRequest -Uri $release -OutFile $File
-	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion -url $release
 
-	$Latest = @{ URL32 = $release; Version = $version }
+
+	$Latest = @{ URL32 = $release; Version = $FileVersion.Version; Checksum32 = $FileVersion.Checksum32; ChecksumType32 = $FileVersion.checksumType }
 	return $Latest
 }
 
-update -ChecksumFor 32 -NoCheckChocoVersion
+update -ChecksumFor none
