@@ -112,7 +112,7 @@ jobs:
           git push origin master
           Get-EventLogs * | ? Source -eq 'Schannel' | fl * | out-file eventlogs.txt
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       
       - name: Create diff file
         run: |
