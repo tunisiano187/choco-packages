@@ -27,7 +27,7 @@ $Options = [ordered]@{
 
     History = @{
         Lines = 120                                         #Number of lines to show
-        Github_UserRepo = $Env:github_user_repo             #User repo to be link to commits
+        Github_UserRepo = "tunisiano187/Choco-packages"             #User repo to be link to commits
         Path = "$PSScriptRoot\Update-History.md"            #Path where to save history
     }
 
