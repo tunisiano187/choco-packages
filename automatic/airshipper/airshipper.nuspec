@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>airshipper</id>
-    <version>0.11.0</version>
+    <version>0.12.0</version>
     <packageSourceUrl>https://github.com/tunisiano187/Choco-packages/tree/master/automatic/airshipper</packageSourceUrl>
     <owners>tunisiano</owners>
 
@@ -30,9 +30,9 @@ Veloren is fully open-source, licensed under GPL 3. It uses original graphics, m
 ### Package-specific issue
 If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Choco-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@f986b7f5de3afc021180256752805698d4efbc38/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
-    <releaseNotes>https://github.com/veloren/Airshipper/releases/tag/v0.11.0</releaseNotes>
+    <releaseNotes>https://github.com/veloren/Airshipper/releases/tag/v0.12.0</releaseNotes>
   </metadata>
   <files>
     <!-- this section controls what actually gets packaged into the Chocolatey package -->
