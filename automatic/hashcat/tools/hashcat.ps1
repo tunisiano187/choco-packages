@@ -1,6 +1,6 @@
-$currentDir = Get-Location                                  # Store location
+$hashcatDir = (Get-ChildItem "$env:ChocolateyToolsLocation\hashcat*" -Directory).FullName
 
-Set-Location "$env:ChocolateyToolsLocation\hashcat\"        # Change to install-dir
+Push-Location $hashcatDir
 
 $argumentsString = $args -join ' '                          # Join arguments to a string
 
@@ -11,4 +11,4 @@ else {                                                      # If not 64-bit
   Invoke-Expression ".\hashcat32.exe $argumentsString"      # Invoke 32-bit executable with parameters
 }
 
-Set-Location "$currentDir"                                  # Change to the stored location
+Pop-Location
