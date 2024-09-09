@@ -14,16 +14,22 @@ function global:au_SearchReplace {
 	}
 }
 
+function global:au_BeforeUpdate {
+	. ..\..\scripts\Get-FileVersion.ps1
+	$FileVersion = Get-FileVersion -url $Latest.URL32
+	$Latest.Checksum32 = $FileVersion.Checksum
+	$Latest.ChecksumType32 = $FileVersion.ChecksumType
+}
+
 function global:au_AfterUpdate($Package) {
 	Invoke-VirusTotalScan $Package
 }
 
 function global:au_GetLatest {
-	. ..\..\scripts\Get-FileVersion.ps1
-	$FileVersion = Get-FileVersion -url $release
+	$url32 = Get-RedirectedUrl $release
+	$version = Get-Version $url32
 
-
-	$Latest = @{ URL32 = $release; Version = $FileVersion.Version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.checksumType }
+	$Latest = @{ URL32 = $url32; Version = $version }
 	return $Latest
 }
 

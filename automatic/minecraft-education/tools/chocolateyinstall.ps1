@@ -2,8 +2,8 @@
 
 
 $packageName      = $env:ChocolateyPackageName
-$url              = 'https://aka.ms/downloadmee-desktopApp'
-$checksum         = 'DF1E49C10839FFDD522A76D98CDA185F4E351E5575ABEEC639A73667CA263CF1C2F2A4741371A2CF6AF069C98A4F7D08E07FFA6577ED0D5C3EF553C60AB65DEC'
+$url              = 'https://downloads.minecrafteduservices.com/retailbuilds/Msi/x86/MinecraftEducation_x86_1.21.500.0.exe'
+$checksum         = '615AE3BA6447AE5DEECD71659473E718AFA757DBDE1330FF645BCEC9480BD3E6B426E13BD15DFEE92BBE66EF74751758A2F76344795E419A8696021DFE9239CD'
 $checksumType     = 'SHA512'
 
 $packageArgs = @{
