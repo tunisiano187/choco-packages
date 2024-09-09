@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>winflector</id>
-    <version>4.0.1.0</version>
+    <version>4.0.2.0</version>
     <title>Winflector (Install)</title>
     <authors>OTC S.A.</authors>
     <owners>tunisiano</owners>
@@ -37,15 +37,15 @@ This is a fully functional version of Winflector software for two concurrent wor
 [Winflector Client](https://chocolatey.org/packages/winflector-client)
 
 # False Positive
-[![](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@a6b799178c1da8fbf40ccda0eb235a763e71b5a8/automatic/winflector/tools/False_Positive.PNG)](https://chocolatey.org/packages/winflector)
+[![](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@2a8f49f3df4f5baee6ea16d82a13063735ccd667/automatic/winflector/False_Positive.PNG)](https://chocolatey.org/packages/winflector)
 
 #### [choco://winflector](choco://winflector)
 To use choco:// protocol URLs, install [(unofficial) choco:// Protocol support ](https://chocolatey.org/packages/choco-protocol-support)
 
 ### Package-specific issue
-If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Chocolatey-packages/issues/new/choose)
+If this package isn't up-to-date for some days, [Create an issue](https://github.com/tunisiano187/Choco-packages/issues/new/choose)
 
-Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@d15c4e19c709e7148588d4523ffc6dd3cd3c7e5e/icons/patreon.png)](https://www.patreon.com/tunisiano)
+Support the package maintainer and [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@f986b7f5de3afc021180256752805698d4efbc38/icons/patreon.png)](https://www.patreon.com/tunisiano)
 ]]></description>
     <summary>otc server for remote application execution</summary>
     <releaseNotes>https://www.winflector.com/english/support/versions.html</releaseNotes>
