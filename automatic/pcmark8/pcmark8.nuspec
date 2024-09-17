@@ -11,7 +11,7 @@
     <projectUrl>http://www.futuremark.com/benchmarks/pcmark8</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/tunisiano187/Chocolatey-packages@e0e579c3382b711562a9cff77c4a104106cf0d14/icons/pcmark8.jpg</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description><![CDATA[## PCMark 8 Basic Edition (Install)
+    <description><![CDATA[PCMark 8 Basic Edition (Install)
 
 #### THE COMPLETE BENCHMARK FOR WINDOWS
 
@@ -36,7 +36,7 @@ This approach ensures that PCMark measures the things that matter, highlighting 
 * Applications test
 * Battery life testing
 
-###Minimum system requirements
+### Minimum system requirements
 OS:	       Microsoft Windows 7
 Processor: Dual core processor
 Memory:    2 GB

@@ -25,7 +25,7 @@ This approach ensures that PCMark measures the things that matter, highlighting 
 * Applications test
 * Battery life testing
 
-###Minimum system requirements
+### Minimum system requirements
 OS:	       Microsoft Windows 7
 Processor: Dual core processor
 Memory:    2 GB
