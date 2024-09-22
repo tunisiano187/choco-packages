@@ -1,9 +1,9 @@
-﻿$ErrorActionPreference = 'Stop'
+$ErrorActionPreference = 'Stop'
 $packageName    = 'pcmark8'
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url            = 'https://d1ejs5fxm96rib.cloudfront.net/PCMark8-v2-10-901.zip'
 # This url comes from the redirection of https://benchmarks.ul.com/downloads/pcmark8.zip
-# The script is : 
+# The script is :
 # $releases = "https://benchmarks.ul.com/downloads/pcmark8.zip" // Url on the website that is always the latest
 # $url=Get-RedirectedUrl $releases // redirected url (to have the file still available if there is a newer version)
 $checksum       = '5ca0578bcf55671c2f8a1bcef767a88a687091099354e01901d418d4570547ba'
