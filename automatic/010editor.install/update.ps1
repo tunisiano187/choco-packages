@@ -18,9 +18,9 @@ if ($MyInvocation.InvocationName -ne '.') { # run the update only if the script 
       }
     }
 
-function global:au_AfterUpdate($Package) {
-	Invoke-VirusTotalScan $Package
-}
+  function global:au_AfterUpdate($Package) {
+	  Invoke-VirusTotalScan $Package
+  }
 }
 
 
