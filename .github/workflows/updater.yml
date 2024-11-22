@@ -20,7 +20,7 @@ env:
 
   # Github token to commit pushed packages to repository
   github_user_repo: ${{ github.repository }}
-  github_api_key: ${{ secrets.GITHUB_TOKEN }}
+  github_api_key: "${{ secrets.GITHUB_TOKEN }}"
 
   # Mail credentials - for error notifications
   mail_user: ${{ secrets.MAIL_USER }}
