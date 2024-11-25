@@ -8,5 +8,8 @@
   "automergeStrategy": "squash",
   "timezone": "Europe/Brussels",
   "groupName": "all",
-  "extends": ["config:base", ":rebaseStalePrs"]
+  "extends": [
+    "config:recommended",
+    ":rebaseStalePrs"
+  ]
 }
