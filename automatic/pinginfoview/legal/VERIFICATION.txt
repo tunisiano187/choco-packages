@@ -15,8 +15,8 @@ and can be verified by doing the following:
     - Use powershell function 'Get-FileHash'
     - Use Chocolatey utility 'checksum.exe'
 
-  checksum type: sha256
-  checksum: E96FA0A5AD2E5146210CCED8ABE290E16989E3FEE89B9DFC18CB25406CA5D258
+  checksum type: SHA512
+  checksum: 5D0486C2A3F0026778EAC049B1399A2F8A8323587F8B5EAE8C6FB98646B2B1C5723A58258A5A5C16CBBF5B0E3D49AF07F6F5697483665C042CC5F61A43E6A87C
 
 Using AU:
 
