@@ -1,5 +1,6 @@
 $ErrorActionPreference = 'Stop'
-import-module AU
+import-module Chocolatey-AU
+Import-Module ..\..\scripts\au_extensions.psm1
 Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://www.dbvis.com/download'
