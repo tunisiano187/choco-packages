@@ -1,4 +1,5 @@
 ﻿name: Package Updater
+permissions: write-all
 
 on:
   #push:
@@ -112,7 +113,11 @@ jobs:
           git push origin master
           Get-EventLogs * | ? Source -eq 'Schannel' | fl * | out-file eventlogs.txt
 
-      - uses: actions/checkout@v4
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+        
       
       - name: Create diff file
         run: |
