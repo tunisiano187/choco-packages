@@ -1,5 +1,5 @@
 $ErrorActionPreference = 'Stop'
-import-module Chocolatey-AU
+import-module AU
 Import-Module ..\..\scripts\au_extensions.psm1
 
 $releases = 'https://www.dbvis.com/download'
@@ -28,8 +28,8 @@ function global:au_GetLatest {
 		$links = "https://www.dbvis.com$links"
 	}
 	$version = $links.split('-')[-1].replace('x64_','').replace('.exe','').replace('_','.')
-	if($version -eq '23.2.5') {
-		$version = '23.2.5.2023112601'
+	if($version -eq '24.3.3') {
+		$version = '24.3.3.2025020501'
 	}
 
 	$url64 = $links
