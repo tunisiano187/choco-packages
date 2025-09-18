@@ -45,7 +45,7 @@ function global:au_GetLatest {
 	}
 	$version = "$versionMajor.$versionMinor.$versionBuild"
 
-	
+
 	$File = "$($env:TEMP)\7tt_setup.exe"
 	Invoke-WebRequest -Uri $url32 -OutFile $File
     $version = [System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion
