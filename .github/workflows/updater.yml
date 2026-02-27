@@ -141,3 +141,23 @@ jobs:
             eventlogs.txt
             **/*.nupkg
           retention-days: 5
+
+
+      - name: Update gist with report
+        if: always()
+        env:
+          GIST_ID: ${{ env.gist_id }}
+          GIST_TOKEN: ${{ secrets.AU_GITHUB_API_KEY }}
+          REPORT_PATH: Update-AUPackages.md
+        run: |
+          pwsh -NoProfile -Command "
+            $gistId = '${{ env.gist_id }}';
+            $token = '${{ secrets.AU_GITHUB_API_KEY }}';
+            $file = 'Update-AUPackages.md';
+            if (Test-Path $file) {
+              $content = Get-Content $file -Raw -Encoding UTF8;
+              $body = @{ files = @{ 'Update-AUPackages.md' = @{ content = $content } } } | ConvertTo-Json -Depth 10;
+              Invoke-RestMethod -Uri "https://api.github.com/gists/$gistId" -Method PATCH -Headers @{ Authorization = "token $token"; Accept = 'application/vnd.github+json' } -Body $body -ContentType 'application/json';
+              Write-Host "Gist updated: $gistId";
+            } else { Write-Warning "Report file not found: $file" }
+          "
