@@ -12,5 +12,13 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
+
 $psfile     = Join-Path "$toolsDir" "hashcat.ps1"
+
+# resolve installation Path during installation where admin user has access the
+# $env:ChocolateyToolsLocation variable
+$hashcatDir = (Get-ChildItem "$env:ChocolateyToolsLocation\hashcat*" -Directory).FullName
+# Insert installation path into Powershell-Script
+(Get-Content $psfile -Raw).Replace('{{HASHCAT_DIR}}', $hashcatDir) | Set-Content $psfile
+
 Install-ChocolateyPowershellCommand -PackageName "hashcat" -PSFileFullPath "$psfile"
