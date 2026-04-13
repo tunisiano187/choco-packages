@@ -12,12 +12,7 @@ Push-Location $hashcatDir
 try {
   $argumentsString = $args -join ' '                          # Join arguments to a string
 
-  if([Environment]::Is64BitProcess) {                         # If 64-bit
-    & ".\hashcat64.exe" $argumentsString                      # Use & operator instead of Invoke-Expression
-  }
-  else {                                                      # If not 64-bit
-    & ".\hashcat32.exe" $argumentsString                      # Use & operator instead of Invoke-Expression
-  }
+  & ".\hashcat.exe" $argumentsString                          # Use & operator instead of Invoke-Expression
 } catch {
   Write-Error "Error running hashcat: $_"
   exit 1
