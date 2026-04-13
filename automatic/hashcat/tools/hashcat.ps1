@@ -1,14 +1,24 @@
-$hashcatDir = (Get-ChildItem "$env:ChocolateyToolsLocation\hashcat*" -Directory).FullName
+# Robust hashcat directory detection with error handling
+$hashcatDir = Get-ChildItem "$env:ChocolateyToolsLocation\hashcat*" -Directory -ErrorAction SilentlyContinue | Select-Object -First 1
 
-Push-Location $hashcatDir
-
-$argumentsString = $args -join ' '                          # Join arguments to a string
-
-if([Environment]::Is64BitProcess) {                         # If 64-bit
-  Invoke-Expression ".\hashcat64.exe $argumentsString"      # Invoke 64-bit executable with parameters
-}
-else {                                                      # If not 64-bit
-  Invoke-Expression ".\hashcat32.exe $argumentsString"      # Invoke 32-bit executable with parameters
+if (-not $hashcatDir) {
+  Write-Error "hashcat installation directory not found in $env:ChocolateyToolsLocation"
+  exit 1
 }
 
-Pop-Location
+Push-Location $hashcatDir.FullName
+
+try {
+  $argumentsString = $args -join ' '
+
+  if([Environment]::Is64BitProcess) {
+    & ".\hashcat64.exe" @args
+  } else {
+    & ".\hashcat32.exe" @args
+  }
+} catch {
+  Write-Error "Error running hashcat: $_"
+  exit 1
+} finally {
+  Pop-Location
+}
