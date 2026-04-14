@@ -24,7 +24,11 @@ function global:au_GetLatest {
 	Write-Output 'Check Folder'
 	$links = $(((Invoke-WebRequest -Uri $releases -UseBasicParsing).Links | Where-Object  {$_.href -match 'dbvis_windows'} | Where-Object  {$_.href -match 'exe'} | Where-Object {$_.href -notMatch '_jre'})).href | Select-Object -First 1
 
-	if($links -notcontains "https") {
+	if (-not $links) {
+		throw "No suitable download link found on $releases"
+	}
+
+	if($links -notlike "*https*") {
 		$links = "https://www.dbvis.com$links"
 	}
 	$version = $links.split('-')[-1].replace('x64_','').replace('.exe','').replace('_','.')
