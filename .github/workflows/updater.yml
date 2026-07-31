@@ -157,8 +157,12 @@ jobs:
           if (Test-Path $file) {
             $content = Get-Content $file -Raw -Encoding UTF8
             $body = @{ files = @{ 'Update-AUPackages.md' = @{ content = $content } } } | ConvertTo-Json -Depth 10
-            Invoke-RestMethod -Uri "https://api.github.com/gists/$gistId" -Method PATCH -Headers @{ Authorization = "token $token"; Accept = 'application/vnd.github+json' } -Body $body -ContentType 'application/json'
-            Write-Host "Gist updated: $gistId"
+            try {
+              Invoke-RestMethod -Uri "https://api.github.com/gists/$gistId" -Method PATCH -Headers @{ Authorization = "token $token"; Accept = 'application/vnd.github+json' } -Body $body -ContentType 'application/json' -ErrorAction Stop
+              Write-Host "Gist updated: $gistId"
+            } catch {
+              Write-Warning "Failed to update gist $gistId (this is a best-effort report step; it does not affect the actual package update): $_"
+            }
           } else {
             Write-Warning "Report file not found: $file"
           }
