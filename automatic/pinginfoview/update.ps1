@@ -37,6 +37,18 @@ function global:au_GetLatest {
 	$version=$(Get-Content .\piv\readme.txt | Where-Object {$_ -match '\* Version'})[0].split(' ')[2]
 
 	$Latest = @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
+
+	# Without this, Invoke-VirusTotalScan (called from au_AfterUpdate below) treats an unset
+	# FileName32 as "no file tracked yet for this package" -- it re-downloads its own scratch
+	# copy via Get-RemoteFiles purely to scan it, then DELETES whatever it downloaded once the
+	# scan is done. That's correct for download-on-install packages, but pinginfoview.zip is
+	# already embedded above via Move-Item, so the deletion strips the real file
+	# chocolateyInstall.ps1 needs. Confirmed live: v3.25.0 failed verification with 7-Zip
+	# unable to extract the archive because tools/pinginfoview.zip was missing from the nupkg
+	# entirely (FilesSnapshot showed only chocolateyInstall.ps1 under tools/) -- same root
+	# cause already fixed for osfmount/freeplane/searchmyfiles this way.
+	$Latest.FileName32 = 'pinginfoview.zip'
+
 	return $Latest
 }
 
