@@ -13,6 +13,10 @@ The list of packages can be found [here](https://github.com/tunisiano187/Choco-p
 ### Patreon
 [![Patreon](https://cdn.jsdelivr.net/gh/tunisiano187/choco-packages@f986b7f5de3afc021180256752805698d4efbc38/icons/patreon.png)](https://www.patreon.com/tunisiano)
 
+### Package folders
+* `automatic/` — Daily auto-updated packages (scanned by `au/update_all.ps1`).
+* `Notupdatedanymore/` — Retired packages, kept for historical reference. Not scanned by the daily updater. A package lands here when it can never succeed through the normal update flow (e.g. flagged by chocolatey.org's automated antivirus scan on every submission, regardless of packaging) rather than through a fixable bug.
+
 ## Guidelines
 
 ### Reporting broken/outdated packages
