@@ -53,4 +53,9 @@ function global:au_GetLatest {
 	return @{ URL32 = $url32; Version = $version; Checksum32 = $FileVersion.Checksum; ChecksumType32 = $FileVersion.ChecksumType }
 }
 
-update -ChecksumFor none -NoCheckChocoVersion
+# 2026-09-28: -NoCheckChocoVersion removed -- v9.0.6 is confirmed live and approved on
+# chocolatey.org (the nuspec here is still stuck at 0.0 since this package's push never commits
+# the version back to git, the same gap documented for cports/projectlibre.install; per CLAUDE.md's
+# 2026-09-05 amendment, a confirmed successful publish is enough to remove the flag even while the
+# local nuspec doesn't show it).
+update -ChecksumFor none
