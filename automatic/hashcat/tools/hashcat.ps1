@@ -10,9 +10,10 @@ if (-not (Test-Path $hashcatDir -PathType Container)) {
 Push-Location $hashcatDir
 
 try {
-  $argumentsString = $args -join ' '                          # Join arguments to a string
-
-  & ".\hashcat.exe" $argumentsString                          # Use & operator instead of Invoke-Expression
+  # Splat the original $args array instead of joining it into one string: joining destroys the
+  # boundaries of any space-separated, quoted path (e.g. "C:\Users\My Name\wordlist.txt") before
+  # hashcat.exe ever sees it, which hashcat then reports as "No such file or directory".
+  & ".\hashcat.exe" @args
 } catch {
   Write-Error "Error running hashcat: $_"
   exit 1

@@ -1,1 +1,2 @@
-﻿Remove-Item "$(Get-ToolsLocation)\hashcat*" -recurse
+﻿Uninstall-BinFile -Name "hashcat"
+Remove-Item "$(Get-ToolsLocation)\hashcat*" -recurse
