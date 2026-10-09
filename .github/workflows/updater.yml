@@ -79,6 +79,13 @@ jobs:
         run: |
           Set-Service wuauserv -StartupType Manual
           choco install --no-progress wormies-au-helpers vt-cli -y
+          # chocolatey-au's own Install-AU.ps1 always runs "./build.ps1 -Task Build" (regardless of
+          # $Env:au_version being a tag, a branch, or empty for "latest release") to build the module
+          # from source, and that build task shells out to dotnet-gitversion.exe. The windows-2025
+          # runner image doesn't ship GitVersion.Tool the way older images did, so every run has been
+          # failing at that step ("term 'dotnet-gitversion.exe' is not recognized") before even
+          # reaching package updates. Install it explicitly rather than depending on the runner image.
+          dotnet tool install --global GitVersion.Tool
           git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
           import-module "$(Get-Location)\scripts\au_extensions.psm1" -global
