@@ -42,8 +42,10 @@ function global:au_GetLatest {
     }
   }
 
-  $verRe = 'View-|-win(?:64)?\.zip'
-  $version64 = $url64 -split "$verRe" | Select-Object -last 1 -skip 1
+  $version64 = [regex]::Match($url64, 'MediathekView-([\d.]+)-win(?:64)?\.zip$').Groups[1].Value
+  if (-not $version64) {
+    throw "Could not extract a version number from matched URL: $url64"
+  }
   @{
     URL64       = [uri]$url64
     Version     = [version]$version64
