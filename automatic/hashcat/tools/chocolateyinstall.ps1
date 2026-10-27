@@ -17,7 +17,7 @@ $psfile     = Join-Path "$toolsDir" "hashcat.ps1"
 
 # resolve installation Path during installation Where-Object admin user has access the
 # $env:ChocolateyToolsLocation variable
-$hashcatDir = (Get-ChildItem "$env:ChocolateyToolsLocation\hashcat*" -Directory).FullName
+$hashcatDir = (Get-ChildItem "$(Get-ToolsLocation)\hashcat*" -Directory).FullName
 # Insert installation path into Powershell-Script
 (Get-Content $psfile -Raw).Replace('{{HASHCAT_DIR}}', $hashcatDir) | Set-Content $psfile
 

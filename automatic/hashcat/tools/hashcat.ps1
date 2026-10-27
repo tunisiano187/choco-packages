@@ -1,4 +1,4 @@
-# replaced by (Get-ChildItem "$env:ChocolateyToolsLocation\hashcat*" -Directory).FullName during installation
+# replaced by (Get-ChildItem "$(Get-ToolsLocation)\hashcat*" -Directory).FullName during installation
 $hashcatDir = '{{HASHCAT_DIR}}'
 
 # Validate directory exists (install might have failed)
