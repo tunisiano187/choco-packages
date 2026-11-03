@@ -46,9 +46,22 @@ function global:au_GetLatest {
   if (-not $version64) {
     throw "Could not extract a version number from matched URL: $url64"
   }
+
+  # A since-retired exe-based MediathekView definition in another repo squatted the
+  # bare 15.0.0 version slot in chocolatey.org's moderation queue (NuGet package
+  # IDs are case-insensitive, so both repos were competing for the same package).
+  # chocolatey.org refuses to push a version string that's already claimed, approved
+  # or not, so a bare X.Y.Z version can collide with that queue entry forever.
+  # Appending the upstream zip's own Last-Modified date as a 4th version component
+  # makes every real release unique and avoids relying on anyone clearing that queue
+  # entry; it stays stable across daily runs since it only changes when upstream
+  # actually re-uploads the file.
+  $lastModified = (Invoke-WebRequest -Uri $url64 -Method Head -UseBasicParsing).Headers['Last-Modified']
+  $dateStamp = ([datetime]::Parse($lastModified)).ToString('yyyyMMdd')
+
   @{
     URL64       = [uri]$url64
-    Version     = [version]$version64
+    Version     = [version]"$version64.$dateStamp"
     PackageName = 'MediathekView'
   }
 }
