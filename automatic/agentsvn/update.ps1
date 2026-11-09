@@ -21,7 +21,7 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    $page=Invoke-WebRequest -uri $releases
+    $page=Invoke-WebRequest -uri $releases -UseBasicParsing
     $version = $page.Content | Where-Object { $_ -match 'Agent SVN [0-9\.]+'}
     $version = $Matches[0].Split(' ')[-1]
     $exist = $page.Content | Where-Object { $_ -match 'asvn32-v[0-9]+'}
