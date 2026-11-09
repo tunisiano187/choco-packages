@@ -27,10 +27,12 @@ function global:au_GetLatest {
   $url      = "https://www.sweetscape.com/download/010EditorWin32Portable.zip"
   $url64    = "https://www.sweetscape.com/download/010EditorWin64Portable.zip"
 
-  $download_version = Invoke-WebRequest -Uri $version_url
-  $version_text = $($download_version.ParsedHtml.getElementsByTagName("h2") | Select-Object -First 1 | ForEach-Object innerText)
-  $version_text -match "Version (.*) - .*$"
-  $version = $Matches[1]
+  $download_version = Invoke-WebRequest -Uri $version_url -UseBasicParsing
+  $heading = [regex]::Matches($download_version.Content, '<h2>\s*Version\s+([\d.]+)\s*-[^<]*</h2>') | Select-Object -Last 1
+  if (-not $heading) {
+    throw "Could not find a version heading on $version_url"
+  }
+  $version = $heading.Groups[1].Value
 
   return @{
     URL32 = $url
