@@ -24,7 +24,7 @@ function global:au_GetLatest {
   $FileVersion = Get-FileVersion $release -keep
   Move-Item $FileVersion.TempFile "tools/advbattoexeconverter.exe"
 
-  $page = Invoke-WebRequest -Uri $domain
+  $page = Invoke-WebRequest -Uri $domain -UseBasicParsing
 	$regexPattern = 'V(\d+(\.\d+)*)'
 	$versionMatch = $page.Content | Select-String -Pattern $regexPattern -AllMatches
 	$version = $versionMatch.Matches[0].Groups[1].Value
