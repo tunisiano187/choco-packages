@@ -86,10 +86,12 @@ jobs:
           # failing at that step ("term 'dotnet-gitversion.exe' is not recognized") before even
           # reaching package updates. Install it explicitly rather than depending on the runner image.
           dotnet tool install --global GitVersion.Tool
-          # dotnet tool install's PATH update (via the user registry) isn't visible to the new
-          # process each later workflow step runs in, so dotnet-gitversion.exe can be "not
-          # recognized" in a later step even though install succeeded here. Add the tools dir
-          # to $GITHUB_PATH, which GitHub Actions does propagate to every subsequent step.
+          # dotnet tool install's PATH update (via the user registry) isn't visible to this
+          # already-running PowerShell process -- Install-AU.ps1's build (further down in this
+          # same step/process) still can't find dotnet-gitversion.exe even though install just
+          # succeeded above. Prepend the tools dir to $env:PATH for the rest of *this* process,
+          # and also to $GITHUB_PATH in case any later, separate workflow step needs it too.
+          $env:PATH = "$env:USERPROFILE\.dotnet\tools;$env:PATH"
           echo "$env:USERPROFILE\.dotnet\tools" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
           git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
