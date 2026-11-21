@@ -86,13 +86,13 @@ jobs:
           # failing at that step ("term 'dotnet-gitversion.exe' is not recognized") before even
           # reaching package updates. Install it explicitly rather than depending on the runner image.
           dotnet tool install --global GitVersion.Tool
-          # dotnet tool install's PATH update (via the user registry) isn't visible to this
-          # already-running PowerShell process -- Install-AU.ps1's build (further down in this
-          # same step/process) still can't find dotnet-gitversion.exe even though install just
-          # succeeded above. Prepend the tools dir to $env:PATH for the rest of *this* process,
-          # and also to $GITHUB_PATH in case any later, separate workflow step needs it too.
-          $env:PATH = "$env:USERPROFILE\.dotnet\tools;$env:PATH"
-          echo "$env:USERPROFILE\.dotnet\tools" | Out-File -FilePath $env:GITHUB_PATH -Append -Encoding utf8
+          # Neither prepending $env:PATH in this process nor writing $GITHUB_PATH (both tried in
+          # #95/#96) made dotnet-gitversion.exe visible to Install-AU.ps1's build further down --
+          # it apparently runs the build task in a context that doesn't inherit either of those.
+          # C:\ProgramData\chocolatey\bin is on machine PATH from before this job even started
+          # (choco itself, and the vt-cli/wormies-au-helpers shims above, already prove that), so
+          # copy the tool shim there instead of relying on a PATH update propagating anywhere.
+          Copy-Item "$env:USERPROFILE\.dotnet\tools\dotnet-gitversion.exe" "C:\ProgramData\chocolatey\bin\dotnet-gitversion.exe" -Force
           git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
           import-module "$(Get-Location)\scripts\au_extensions.psm1" -global
