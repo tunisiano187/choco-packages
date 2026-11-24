@@ -81,19 +81,26 @@ jobs:
           choco install --no-progress wormies-au-helpers vt-cli -y
           # chocolatey-au's own Install-AU.ps1 always runs "./build.ps1 -Task Build" (regardless of
           # $Env:au_version being a tag, a branch, or empty for "latest release") to build the module
-          # from source, and that build task shells out to dotnet-gitversion.exe. The windows-2025
-          # runner image doesn't ship GitVersion.Tool the way older images did, so every run has been
-          # failing at that step ("term 'dotnet-gitversion.exe' is not recognized") before even
-          # reaching package updates. Install it explicitly rather than depending on the runner image.
-          # Neither prepending $env:PATH nor writing $GITHUB_PATH (#95/#96) made
-          # dotnet-gitversion.exe visible to Install-AU.ps1's build further down. #97 then tried
-          # copying the shim from the default global-tool location into
-          # C:\ProgramData\chocolatey\bin (on machine PATH since before this job started), but
-          # that assumed a fixed shim filename/location that GitVersion.Tool 7.0.1 didn't actually
-          # use ("Copy-Item: Cannot find path '...\.dotnet\tools\dotnet-gitversion.exe'"). Installing
-          # straight into that already-on-PATH directory with --tool-path sidesteps guessing the
-          # default location's layout entirely.
-          dotnet tool install --tool-path C:\ProgramData\chocolatey\bin GitVersion.Tool
+          # from source, and that build task shells out to gitversion.exe/dotnet-gitversion.exe. The
+          # windows-2025 runner image doesn't ship GitVersion the way older images did, so every run
+          # has been failing at that step before even reaching package updates. Install it explicitly
+          # rather than depending on the runner image.
+          # Neither prepending $env:PATH nor writing $GITHUB_PATH (#95/#96) made a global `dotnet tool
+          # install` visible to Install-AU.ps1's build further down. #97 then tried copying the shim
+          # from the default global-tool location into C:\ProgramData\chocolatey\bin (on machine PATH
+          # since before this job started), but that assumed a fixed shim filename/location that
+          # GitVersion.Tool 7.0.1 didn't actually use. #98 then installed straight into that
+          # already-on-PATH directory with `dotnet tool install --tool-path`: Get-Command found the
+          # resulting dotnet-gitversion.exe right after install and again ~2 minutes later in AU's own
+          # InstallGitVersion task, but the Build task's own *direct* invocation of dotnet-gitversion.exe
+          # a few seconds after that still failed with "term ... is not recognized" (confirmed live on
+          # runs 45130654069 and 45042380368, both on #98's own merge commit) - a raw dotnet-tool shim
+          # evidently isn't reliably resolvable later in the same PowerShell session even once found.
+          # Use Chocolatey's own ShimGen-based install instead (the exact mechanism AU's InstallGitVersion
+          # task itself falls back to, and the same one that reliably produces working shims for choco,
+          # vt.exe and wormies-au-helpers earlier in this very job) so GitVersion.Tool isn't resolved via
+          # a dotnet-tool shim at all.
+          choco install gitversion.portable -y --no-progress
           git clone -q https://github.com/chocolatey-community/chocolatey-au.git $Env:TEMP/au
           . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
           import-module "$(Get-Location)\scripts\au_extensions.psm1" -global
