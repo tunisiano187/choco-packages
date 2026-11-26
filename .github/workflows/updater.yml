@@ -45,6 +45,16 @@ env:
   nuget_artifacts: ${{ github.runner.temp }}/artifacts
   VT_APIKEY: ${{ secrets.VT_APIKEY }}
 
+  # Once #99 (gitversion.portable) got GitVersion actually resolving, the next run (45519035488)
+  # surfaced a second, previously-masked bug one step further in: chocolatey-au's own cloned repo
+  # ships a legacy-schema GitVersion.yml ("next-version"/"ignore" keys), but GitVersion.Tool 7.0.1
+  # defaults to expecting the new v7 config schema, so it refuses to run ("configuration file uses
+  # the legacy v6 configuration structure, but GITVERSION_CONFIGURATION_VERSION=v7 is selected"),
+  # which left $versionInfo empty and failed Update-ModuleManifest with a null ModuleVersion. This
+  # is GitVersion's own documented escape hatch for exactly this mismatch, applied here rather than
+  # in chocolatey-au's own repo (not ours to edit).
+  GITVERSION_CONFIGURATION_VERSION: v6
+
 jobs:
   updater:
     runs-on: windows-2025
